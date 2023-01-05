@@ -9,7 +9,7 @@ Efforts for homeworks, learning, preparing and studying.
 <br/>  &emsp; &emsp; &emsp; ■ Algebra
 <br/>  &emsp; &emsp; &emsp; ■ Analysis
 <br/>  &emsp; &emsp; &emsp; ■ Computational Logic
-<br/> &emsp; &emsp; 🎡 Extra:
+<br/> &emsp; &emsp; 🎡 Extra (non-mandatory):
 <br/>  &emsp; &emsp; &emsp; ■ Communication and profeesional development in informatics
 <br/>  &emsp; &emsp; &emsp; ■ Educational psychology
 <br/>  &emsp; ⚪ Semester 2
@@ -21,7 +21,7 @@ Efforts for homeworks, learning, preparing and studying.
 <br/> &emsp; &emsp; 🧠 Science:
 <br/>  &emsp; &emsp; &emsp; ■ Geometry
 <br/>  &emsp; &emsp; &emsp; ■ Dynamical systems
-<br/> &emsp; &emsp; 🎡 Extra:
+<br/> &emsp; &emsp; 🎡 Extra (non-mandatory):
 <br/>  &emsp; &emsp; &emsp; ■ Pedagogy fundamentals
 ## 🟣 Year 2
 <br/>  &emsp; ⚪ Semester 3
