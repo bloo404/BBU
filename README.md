@@ -1,6 +1,26 @@
 # 🎓Computer Science Projects
-# [Year 1](https://github.com/bloo404/BBU-Projects-Year-1)
-# [Year 2]()
+# Year 1
+<br/> Computers:
+#### ■ Programming fundamentals
+#### ■ Architecture of computing systems
+<br/> Science:
+#### ■ Algebra
+#### ■ Analysis
+#### ■ Computational Logic
+<br/> Extra:
+#### ■ Communication and profeesional development in informatics
+#### ■ Educational psychology
+<br/> Computers:
+#### ■ Graph algorithms
+#### ■ Data structures and algorithms
+#### ■ Object Oriented Programming
+#### ■ Operating Systems
+<br/> Science:
+#### ■ Geometry
+#### ■ Dynamical systems
+<br/> Extra:
+#### ■ Pedagogy fundamentals
+# Year 2
 ## ➋ Semester 3
 <br/> Computers:
 #### ■ Computer networks
@@ -17,7 +37,7 @@
 <br/> Computers:
 <br/> Science:
 <br/> Extra:
-# [Year 3]()
+# Year 3
 ## ➋ Semester 5
 <br/> Computers:
 <br/> Science:
