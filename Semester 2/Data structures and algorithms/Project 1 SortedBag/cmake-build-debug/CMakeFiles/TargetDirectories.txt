@@ -1,0 +1,3 @@
+C:/Users/bulat/Desktop/UBB/SEM 2/DSA/Project 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/bulat/Desktop/UBB/SEM 2/DSA/Project 1/cmake-build-debug/CMakeFiles/Lab_sorted_bag.dir
+C:/Users/bulat/Desktop/UBB/SEM 2/DSA/Project 1/cmake-build-debug/CMakeFiles/edit_cache.dir
