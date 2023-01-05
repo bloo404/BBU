@@ -1,4 +1,4 @@
-# 🎓Computer Science Projects
+# 🎓Computer Science Projects (english)
 Efforts for homeworks, learning, preparing and studying.
 ##  🟣 Year 1
 <br/>  &emsp; ⚪ **Semester 1**
