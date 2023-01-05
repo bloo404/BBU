@@ -1,0 +1,84 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start
+     5                                   
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf
+     8                                  import exit msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                  import scanf msvcrt.dll
+    11                                  ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                   
+    15                                  segment data use32 class=data
+    16                                  
+    17 00000000 00000000                    a dd 0
+    18 00000004 257800                      a_format db "%x", 0
+    19                                      
+    20 00000007 00000000                    b dd 0
+    21 0000000B 257800                      b_format db "%x", 0
+    22                                      
+    23                                      k equ 2
+    24                                      
+    25 0000000E 61203D2000                  a_equal db "a = ", 0
+    26 00000013 62203D2000                  b_equal db "b = ", 0
+    27                                      
+    28 00000018 646966666572656E63-         sol_difference db "difference = %x (h)", 0
+    28 00000021 65203D202578202868-
+    28 0000002A 2900               
+    29                                      
+    30 0000002C 73756D203D20257820-         sol_sum db "sum = %x (h)    ", 0
+    30 00000035 2868292020202000   
+    31                                   
+    32                                  segment code use32 class=code
+    33                                  start:
+    34                                      ; Read two doublewords a and b in base 16 from the keyboard. Display the sum of the low parts of the two numbers and the difference between the high parts of the two numbers in base 16 Example:
+    35                                      ; a = 0010 1A35h
+    36                                      ; b = 0002 3219h
+    37                                      ; sum = 4C4Eh
+    38                                      ; difference = Eh
+    39                                   
+    40 00000000 68[0E000000]                push dword a_equal     ; get the value of a
+    41 00000005 FF15[00000000]              call [printf]     ; print a = 
+    42 0000000B 83C404                      add esp, 4 * 1 ; clear
+    43                                  
+    44                                      ; read a from keyboard
+    45 0000000E 68[00000000]                push a
+    46 00000013 68[04000000]                push a_format
+    47 00000018 FF15[00000000]              call [scanf]
+    48 0000001E 83C408                      add esp, 4 * 2
+    49                                   
+    50 00000021 68[13000000]                push dword b_equal    ; get the value of b
+    51 00000026 FF15[00000000]              call [printf]     ; print b = 
+    52 0000002C 83C404                      add esp, 4 * 1 ; clear
+    53                                   
+    54                                      ; read b from keyboard
+    55 0000002F 68[07000000]                push b
+    56 00000034 68[0B000000]                push b_format
+    57 00000039 FF15[00000000]              call [scanf]
+    58 0000003F 83C408                      add esp, 4 * 2 ;  clear
+    59                                   
+    60 00000042 B800000000                  mov eax, 0 ; clearing the register
+    61 00000047 66A1[00000000]              mov ax, [a] ; it will take only the low part (little endian)
+    62 0000004D 668B1D[07000000]            mov bx, [b] ; only the low part
+    63 00000054 6601D8                      add ax, bx ; adding the two values
+    64                                   
+    65 00000057 50                          push eax ; pushing the result
+    66 00000058 68[2C000000]                push dword sol_sum ; sol_sum remembers the result of the sum
+    67 0000005D FF15[00000000]              call [printf] ; prints the sum
+    68 00000063 83C408                      add esp, 4 * 2 ; clear
+    69                                   
+    70 00000066 B800000000                  mov eax, 0 ; clear
+    71 0000006B 66A1[02000000]              mov ax, [a + 2] ; 
+    72 00000071 668B1D[09000000]            mov bx, [b + 2] ;
+    73 00000078 6629D8                      sub ax, bx ; substracting bx of ax
+    74                                   
+    75 0000007B 50                          push eax ; pushing the result
+    76 0000007C 68[18000000]                push dword sol_difference ; pushing the solution
+    77 00000081 FF15[00000000]              call [printf] ; printing the solution
+    78 00000087 83C408                      add esp, 4 * 2 ; clear
+    79                                   
+    80 0000008A 6A00                        push dword 0
+    81 0000008C FF15[00000000]              call [exit]

@@ -1,0 +1,57 @@
+     1                                  ; (a*2)+2*(b-3)-d-2*c
+     2                                  
+     3                                  bits 32 ; assembling for the 32 bits architecture
+     4                                  
+     5                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     6                                  global start        
+     7                                  
+     8                                  ; declare external functions needed by our program
+     9                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+    10                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    11                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                  segment data use32 class=data
+    15 00000000 1E                          a db 30
+    16 00000001 1A                          b db 26 
+    17 00000002 28                          c db 40 
+    18 00000003 0401                        d dw 260
+    19                                  
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23                                          ; a*2
+    24 00000000 A0[00000000]                    mov al, [a] ; al=a
+    25 00000005 B302                            mov bl, 2
+    26 00000007 F6E3                            mul bl ; result a*2 in ax
+    27                                          
+    28                                          ; b-3
+    29 00000009 8A1D[01000000]                  mov bl, [b]
+    30 0000000F 80EB03                          sub bl, 3h ; bl = b-3
+    31                                          
+    32                                          ; 2*(b-3)
+    33 00000012 6689C1                          mov cx, ax ; we move a*2 into cx
+    34 00000015 66B80000                        mov ax, 0 ; clean the register
+    35 00000019 B002                            mov al, 2 ; put the value of 2 into ax
+    36 0000001B F6E3                            mul bl ; ax=2*(b-3)
+    37                                          
+    38                                          ; the sum of the two 
+    39                                          ; (a*2)+2*(b-3)
+    40 0000001D 6601C1                          add cx, ax ; cx=(a*2)+2*(b-3)
+    41                                          
+    42                                          ; 2*c
+    43 00000020 66B80000                        mov ax, 0 ; clean the register and put 2 into it
+    44 00000024 B002                            mov al, 2
+    45 00000026 8A0D[02000000]                  mov cl, [c] ; cl=c
+    46 0000002C F6E1                            mul cl ; now ax=c*2
+    47                                          
+    48                                          ; (a*2)+2*(b-3)-d
+    49 0000002E 668B15[03000000]                mov dx, [d] ; dx=d
+    50 00000035 6629D1                          sub cx,dx ; cx=(a*2)+2*(b-3)-d
+    51                                          
+    52                                          ; (a*2)+2*(b-3)-d-2*c
+    53 00000038 6629C1                          sub cx, ax ; cx=(a*2)+2*(b-3)-d-2*c
+    54                                          
+    55                                          ; exit(0)
+    56 0000003B 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    57 0000003D FF15[00000000]                  call    [exit]       ; call exit to terminate the program

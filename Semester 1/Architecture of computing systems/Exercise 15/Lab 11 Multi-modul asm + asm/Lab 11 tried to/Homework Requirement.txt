@@ -1,0 +1,9 @@
+ASM+ASM Homework: due week 12. 
+
+
+
+Requirements - create at least one module and one main program in which you use a procedure from the module; 
+
+             - the procedure must have a minimum of one parameter and one return value (or output parameter) transmitted using the stack; 
+
+             - write the complete description of the procedure use, including what it does, what are the parameters, where is the return or output value and what registers are being modified.

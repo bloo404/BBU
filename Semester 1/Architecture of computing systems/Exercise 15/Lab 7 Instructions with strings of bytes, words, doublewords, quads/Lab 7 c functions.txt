@@ -1,0 +1,62 @@
+23/11/2022
+
+C functions
+
+call function -> (jumps) goes to a function and then returns back to the next function
+
+arguments are placed from right to left
+
+result is returned in eax
+
+save eax,ecx,eds before the call function
+
+pushad -> push all registers on the stack
+(call...)
+popad -> pops all their values back (we could store the result from the call from eax somewhere outisde registers before giving them back their values)
+
+ASM
+
+	printf(")..%d..%d..",n,m);
+		|
+		v
+	n dd 10
+	m dd 5
+	format db "I have %d apples and %d airplanes", 0
+	
+	push dword [m] (reverse order from C (right to left))
+	push dword [n]
+	push format
+	call [printf]	; adds to the stack m,n,format,return
+			; then pops the return address, but not the rest
+	add esp, 4*3	; empties the stack
+	
+	
+Decreasing stack: we go down in the stack
+- the addresses start from the end [f] [n] [m]
+				 44  46  50  54
+Increasing stack: we go up the stack
+
+
+push dword n <=> &n in C
+call [scanf] to read
+
+scanf -> double word, overrides the first charachters if it was not declared as a double in the first place
+
+fopen => file descriptor (open)
+fprintf => write in a file
+fread => reads buffers from a file
+fclose => close a file
+
+also have to include
+
+extern exit,printf,scanf ; what we called
+import exit msvcrt.dll	; where is it imported from
+import printf msvcrt.dll
+import scanf msvcrt.dll
+
+~alinacalin/ASC/Cresources.html
+studytonight.com
+
+homework: 2 problems
+	1) function calls
+	2) text file operations

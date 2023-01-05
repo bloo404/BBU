@@ -1,0 +1,62 @@
+     1                                  ; A string containing n binary representations on 8 bits is given as a character string.
+     2                                  ; Obtain the string containing the numbers corresponding to the given binary representations.
+     3                                  ; Example:
+     4                                  ; Given: '10100111b', '01100011b', '110b', '101011b'
+     5                                  ; Obtain: 10100111b, 01100011b, 110b, 101011b
+     6                                  
+     7                                  bits 32 ; assembling for the 32 bits architecture
+     8                                  
+     9                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+    10                                  global start        
+    11                                  
+    12                                  ; declare external functions needed by our program
+    13                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+    14                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    15                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    16                                  
+    17                                  ; our data is declared here (the variables needed by our program)
+    18                                  segment data use32 class=data
+    19 00000000 313031303031313162-         a db '10100111b', '01100011b', '110b', '101011b'
+    19 00000009 303131303030313162-
+    19 00000012 313130623130313031-
+    19 0000001B 3162               
+    20                                      len_a equ $-a
+    21 0000001D 00<rept>                    solution times len_a db 0
+    22 0000003A 00                          sum db 0
+    23 0000003B 256200                      format db "%b",0
+    24                                      
+    25                                  ; our code starts here
+    26                                  segment code use32 class=code
+    27                                      start:
+    28 00000000 B91D000000                      mov ecx, len_a
+    29 00000005 E349                            jecxz final
+    30                                          
+    31 00000007 BE00000000                      mov esi, 0 ; index for a
+    32 0000000C BF00000000                      mov edi, 0 ; index for solution
+    33                                          
+    34                                          calculate:
+    35 00000011 8A9E[00000000]                      mov bl, [a + esi]
+    36 00000017 80EB30                              sub bl, 30h
+    37 0000001A 80FB01                              cmp bl, 1h
+    38 0000001D 7618                                jbe zero_or_one
+    39 0000001F 7700                                ja b ; for my mental health
+    40                                              b:
+    41 00000021 8A15[3A000000]                          mov dl, byte [sum]
+    42 00000027 8897[1D000000]                          mov [solution + edi], dl
+    43 0000002D C605[3A000000]00                        mov byte [sum], 0
+    44 00000034 47                                      inc edi
+    45 00000035 EB16                                    jmp neither
+    46                                              zero_or_one:
+    47 00000037 A0[3A000000]                            mov al, byte [sum] ; putting the sum somewhere
+    48 0000003C B202                                    mov dl, 2 ; 2 into dl
+    49 0000003E F6E2                                    mul dl ; multiplying al with 2, even if the result is in ax, it doesn t exceed 8 bits
+    50 00000040 A2[3A000000]                            mov byte [sum], al
+    51 00000045 001D[3A000000]                          add byte [sum], bl
+    52 0000004B EB00                                    jmp neither ; for my mental health
+    53                                              neither:
+    54 0000004D 46                                      inc esi
+    55 0000004E E2C1                            loop calculate
+    56                                          final:
+    57                                          ; exit(0)
+    58 00000050 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    59 00000052 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

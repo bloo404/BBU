@@ -1,0 +1,69 @@
+     1                                  ; COMPLEX EXAMPLE
+     2                                  
+     3                                  ; Write a program in the assembly language that computes the following arithmetic expression, considering the following data types for the variables:
+     4                                  ; a - byte, b - word
+     5                                  ; (b / a * 2 + 10) * b - b * 15;
+     6                                  ; ex. 1: a = 10; b = 40; Result: (40 / 10 * 2 + 10) * 40 - 40 * 15 = 18 * 40 - 1600 = 720 - 600 = 120
+     7                                  ; ex. 2: a = 100; b = 50; Result: (50 / 100 * 2 + 10) * 50 - 50 * 15 = 12 * 50 - 750 = 600 - 750 = - 150
+     8                                  
+     9                                  bits 32 ; assembling for the 32 bits architecture
+    10                                  
+    11                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+    12                                  global start        
+    13                                  
+    14                                  ; declare external functions needed by our program
+    15                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+    16                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    17                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    18                                  
+    19                                  ; our data is declared here (the variables needed by our program)
+    20                                  segment data use32 class=data
+    21                                          ; Small example
+    22                                              ;a db 64
+    23                                              ;b db 4
+    24 00000000 0A                          a db 10
+    25 00000001 2800                        b dw 40
+    26                                          
+    27                                  ; our code starts here
+    28                                  segment code use32 class=code
+    29                                      start:
+    30                                          ; Small example
+    31                                              ;mov ax, 4
+    32                                              ;mul byte [a] ; because a is a memory location, we have to specify how much are we taking from a
+    33                                          
+    34                                          ; b/a
+    35 00000000 66A1[01000000]                  mov ax, [b]
+    36 00000006 F635[00000000]                  div byte [a] ; AL = AX/a = b/a    AH = AX%b
+    37                                          
+    38                                          ; b/a*2
+    39 0000000C B302                            mov bl, 2
+    40 0000000E F6E3                            mul bl ; bl*al => ax, ah is lost
+    41                                          
+    42                                          ; b/a*2 + 10
+    43 00000010 6683C00A                        add ax, 10
+    44                                          
+    45                                          ; (b/a*2+10)*b
+    46 00000014 66F725[01000000]                mul word [b] ; => dx:ax
+    47 0000001B 6689D3                          mov bx, dx
+    48 0000001E 6689C1                          mov cx, ax   ; => bx:cx = (b/a*2+10)*b
+    49                                          
+    50                                          ; we re gonna move from bx:cx into EBX so we can substract from them
+    51                                          ; we re gonna use the stack
+    52 00000021 6653                            push bx ; => stack: bx...
+    53 00000023 6651                            push cx ; => stack: bx cx ...
+    54 00000025 5B                              pop ebx ; => eax=bx:cx, stack: ...
+    55                                          
+    56                                          ; b*15
+    57 00000026 66B80F00                        mov ax, 15
+    58 0000002A 66F725[01000000]                mul word [b] ; => DX:AX = 15*b
+    59                                          ; we re using stack as before
+    60 00000031 6652                            push dx
+    61 00000033 6650                            push ax
+    62 00000035 58                              pop eax
+    63                                          
+    64                                          ; (b/a*2+10)*b - b*15
+    65 00000036 29C3                            sub ebx,eax ; => the result is in ebx
+    66                                          
+    67                                          ; exit(0)
+    68 00000038 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    69 0000003A FF15[00000000]                  call    [exit]       ; call exit to terminate the program

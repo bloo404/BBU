@@ -1,0 +1,93 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    11                                  
+    12                                  ; our data is declared here (the variables needed by our program)
+    13                                  segment data use32 class=data
+    14 00000000 07563412153C2B1A            s dd 12345607h, 1A2B3C15h
+    15                                      len_s equ $-s
+    16 00000000 <rept>                      d times len_s db
+    16          ******************       warning: no operand for data declaration
+    17 00000008 456C656D656E742025-         format db "Element %d: %d",0
+    17 00000011 643A20256400       
+    18 00000017 00000000                    value dd 0
+    19                                      
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23                                          ; Given an array S of doublewords, build the array of bytes D formed from bytes of doublewords sorted as unsigned numbers in descending order.
+    24                                          ; s DD 12345607h, 1A2B3C15h
+    25                                          ; d DB 56h, 3Ch, 34h, 2Bh, 1Ah, 15h, 12h, 07h
+    26                                          
+    27 00000000 FC                              cld ; clear direction flag
+    28                                          
+    29                                          ; big step 1: order the s string (merge sort in asm)
+    30                                  
+    31 00000001 B908000000                      mov ecx, len_s  ; ecx gets the value of the len of s
+    32 00000006 BE00000000                      mov esi, 0      ; main index (i in cpp)
+    33 0000000B E387                            jecxz final     ; if ecx is zero it jumps to the end
+    33          ******************       warning: byte data exceeds bounds [-w+number-overflow]
+    34                                          parcurgere_elemente:
+    35 0000000D 89F7                                mov edi, esi    ; edi is the index for the second loop (j in cpp)
+    36 0000000F 83C701                              add edi, 1      ; edi = esi + 1
+    37 00000012 BB08000000                          mov ebx, len_s  ; ebx is like an auxiliar where I compute the value for ecx for the next loop
+    38 00000017 29FB                                sub ebx, edi    ; ecx should be = len_s - esi + 1 (length of the string - current step + 1)
+    39 00000019 83C301                              add ebx, 1 
+    40 0000001C 89D9                                mov ecx, ebx    ; move into ecx the value from ebx (auxiliary register)
+    41 0000001E 83FF08                              cmp edi, len_s  ; compare edi with the len of s => if we exceeded the length we must go to the end
+    42 00000021 7F1F                                jg end_of_the_elements ; jecxz not necessary because of the comparison we do between the edi index and the len of s
+    43                                              descending_order:
+    44 00000023 8A9E[00000000]                          mov bl, [s + esi] ; moving into registers the values of the current element and the elements after it
+    45 00000029 8ABF[00000000]                          mov bh, [s + edi]
+    46 0000002F 38FB                                    cmp bl, bh         ; compare the two registers
+    47 00000031 730C                                    jae dont_interchange ; if they are already ordered descending, we dont interchange them
+    48                                                  interchange:
+    49 00000033 88BE[00000000]                              mov [s + esi], bh ; since we used registers, the interchange is much easier
+    50 00000039 889F[00000000]                              mov [s + edi], bl
+    51                                                  dont_interchange:
+    52 0000003F 47                                      inc edi ; increase edi (index of the elements after the current from the bigger loop)
+    53 00000040 E2E1                                loop descending_order   ; repeat
+    54                                              end_of_the_elements:    ; when reaching the end of the smaller loop that goes through the elements after the current element
+    55 00000042 46                                  inc esi     ; increase esi for going to the next element
+    56 00000043 B808000000                          mov eax, len_s     ; compute in eax the value needed for ecx for the loop to go well (substracting from ecx until it gets to 0 blah blah)
+    57 00000048 29F0                                sub eax, esi       ; ecx = len_s(length of elements) - esi(current index) - 1 (we increased esi with 1)
+    58 0000004A 89C1                                mov ecx, eax
+    59 0000004C E2BF                            loop parcurgere_elemente ; loop the loop that goes through the elements
+    60                                          
+    61                                          ; big step 2: now that we ordered the string s, we can add all elements into d
+    62                                          
+    63 0000004E B908000000                      mov ecx, len_s  ; initialize ecx with the len of s
+    64 00000053 BE00000000                      mov esi, 0      ; initialize the 2 indexes with 0
+    65 00000058 BF00000000                      mov edi, 0    
+    66 0000005D E335                            jecxz final     ; if s doesn t have anything, we end it all
+    67                                          adaugare_elemente_in_d: 
+    68 0000005F 8A86[00000000]                      mov al, [s + esi]     ;   we cannot do mov [d+edi],[s+esi] so we use al
+    69 00000065 8887[08000000]                      mov [d + edi],al
+    70 0000006B 46                                  inc esi ; increase both indexes
+    71 0000006C 47                                  inc edi
+    72 0000006D E2F0                            loop adaugare_elemente_in_d ; loop while we have remaining elements
+    73                                          
+    74 0000006F B908000000                      mov ecx, len_s
+    75 00000074 BF00000000                      mov edi, 0
+    76 00000079 E319                            jecxz final
+    77                                          print_elements:
+    78 0000007B 8B87[08000000]                      mov eax, [d + edi]
+    79 00000081 50                                  push eax
+    80 00000082 57                                  push dword edi
+    81 00000083 68[08000000]                        push dword format
+    82 00000088 FF15[00000000]                      call [printf]
+    83 0000008E 83C408                              add esp, 4*2
+    84 00000091 47                                  inc edi
+    85 00000092 E2E7                            loop print_elements
+    86                                          
+    87                                          final:
+    88                                          ; exit(0)
+    89 00000094 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    90 00000096 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -1,0 +1,92 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, fopen, fclose, fprintf               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                  import fopen msvcrt.dll
+    10                                  import fprintf msvcrt.dll
+    11                                  import fclose msvcrt.dll
+    12                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    13                                  
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16                                      
+    17 00000000 686F6D65776F726B2E-         fileName db "homework.txt", 0
+    17 00000009 74787400           
+    18 0000000D 7700                        accesType db "w", 0
+    19                                      
+    20 0000000F FFFFFFFF                    fileDescriptor dd -1
+    21                                      
+    22 00000013 616365737461206573-         text db "acesta este un text suport pentru tema", 0 ;0c2s4a
+    22 0000001C 746520756E20746578-
+    22 00000025 74207375706F727420-
+    22 0000002E 70656E747275207465-
+    22 00000037 6D6100             
+    23                                      len equ $-text
+    24                                      
+    25 0000003A 256300                      wordFormat db "%c", 0
+    26 0000003D 256400                      decFormat db "%d", 0
+    27                                      
+    28                                  ; our code starts here
+    29                                  segment code use32 class=code
+    30                                      start:
+    31                                          ; ...
+    32 00000000 68[0D000000]                    push dword accesType
+    33 00000005 68[00000000]                    push dword fileName
+    34 0000000A FF15[00000000]                  call [fopen] ; opening the file
+    35 00000010 83C408                          add esp, 4 * 2 ; cleaning the register
+    36                                          
+    37 00000013 A3[0F000000]                    mov [fileDescriptor], eax ; memorizing in filedescriptor the location of the file
+    38                                          
+    39 00000018 83F800                          cmp eax, 0 ; verifying if we have something in the memory
+    40 0000001B 746A                            je final ; jump to final if we don t have anything
+    41                                          
+    42 0000001D BE00000000                      mov esi, 0 ; index for the text
+    43 00000022 B927000000                      mov ecx, len ; the length of the text
+    44                                          again:
+    45 00000027 F7C601000000                        test esi, 1 ; verifying if it is even or odd
+    46 0000002D 7522                                jnz printChar ; print the character if odd
+    47                                              
+    48 0000002F 80BE[13000000]20                    cmp byte[text+esi], 20h ; verifying if it s space
+    49 00000036 7419                                je printChar ; prints the space if it s space
+    50                                              
+    51 00000038 60                                  pushad ; memorizing the registers
+    52 00000039 56                                  push esi
+    53 0000003A 68[3D000000]                        push dword decFormat ; pushing the decimal format to print into the txt file
+    54 0000003F FF35[0F000000]                      push dword [fileDescriptor] ; remembers the location where to print the number
+    55 00000045 FF15[00000000]                      call [fprintf] ; print the data
+    56 0000004B 83C40C                              add esp, 4*3 ; cleans esp of the parameters that we used
+    57 0000004E 61                                  popad ; we re free from the registers in the stack
+    58                                              
+    59 0000004F EB24                                jmp over_printChar ; doesn t print a character if we printed the value of the position
+    60                                              
+    61                                              printChar:
+    62 00000051 8A9E[13000000]                      mov bl, [text+esi] ; we remember the charachter into BL
+    63 00000057 B800000000                          mov eax, 0 ; cleaning eax
+    64 0000005C 88D8                                mov al, bl ; remembering in AL the charachter 
+    65 0000005E 60                                  pushad ; we put the register on the stack
+    66 0000005F 50                                  push eax ; push the charachter
+    67 00000060 68[3A000000]                        push dword wordFormat ; push the charachter as a charachter (not ASCII)
+    68 00000065 FF35[0F000000]                      push dword [fileDescriptor] ; remembering the location where to print the number
+    69 0000006B FF15[00000000]                      call [fprintf] ; prints the data
+    70 00000071 83C40C                              add esp, 4*3 ; cleans 
+    71 00000074 61                                  popad ; empties the registers in the stacl
+    72                                              
+    73                                              over_printChar: ; used to jump over the printing of a charachter in case it s even
+    74                                              
+    75 00000075 46                                  inc esi ; index that helps going to the next character
+    76                                              
+    77 00000076 E2AF                            loop again
+    78                                          
+    79 00000078 FF35[0F000000]                  push dword [fileDescriptor] ; printing the result
+    80 0000007E FF15[00000000]                  call [fclose] ; closing the file
+    81 00000084 83C404                          add esp, 4*1
+    82                                          
+    83                                          final:
+    84                                          
+    85                                          ; exit(0)
+    86 00000087 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    87 00000089 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

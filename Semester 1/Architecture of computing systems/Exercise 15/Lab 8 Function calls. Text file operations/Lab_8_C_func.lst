@@ -1,0 +1,76 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                  import scanf msvcrt.dll
+    11                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                  segment data use32 class=data
+    15 00000000 0000                        a dw 0
+    16 00000002 0000                        b dw 0
+    17 00000004 00000000                    sum dd 0
+    18 00000008 41203D2000                  message_a db "A = ", 0
+    19 0000000D 42203D2000                  message_b db "B = ", 0
+    20 00000012 256400                      format db "%d", 0
+    21 00000015 5468652073756D2069-         message_final db "The sum in base 10: %d", 0
+    21 0000001E 6E2062617365203130-
+    21 00000027 3A20256400         
+    22 0000002C 5468652073756D2069-         message_final_hexa db "The sum in base 16 is: %x", 0
+    22 00000035 6E2062617365203136-
+    22 0000003E 2069733A20257800   
+    23                                  
+    24                                  ; our code starts here
+    25                                  segment code use32 class=code
+    26                                      start:
+    27                                          ; Read two numbers a and b (in base 10) from the keyboard and calculate a + b. Display the result in base 16
+    28                                          ; Since the requirements didn't mention if it's signed or unsigned, I worked on signed numbers
+    29                                          
+    30                                          ; printing message for A
+    31 00000000 68[08000000]                    push  dword message_a
+    32 00000005 FF15[00000000]                  call  [printf]
+    33 0000000B 83C404                          add  esp,4
+    34                                  
+    35                                          ; reading A
+    36 0000000E 68[00000000]                    push dword a
+    37 00000013 68[12000000]                    push dword format
+    38 00000018 FF15[00000000]                  call [scanf]
+    39 0000001E 83C408                          add esp, 4*2
+    40                                          
+    41                                          ; printing message for B
+    42 00000021 68[0D000000]                    push  dword message_b
+    43 00000026 FF15[00000000]                  call  [printf]
+    44 0000002C 83C404                          add  esp,4
+    45                                  
+    46                                          ; reading B
+    47 0000002F 68[02000000]                    push dword b
+    48 00000034 68[12000000]                    push dword format
+    49 00000039 FF15[00000000]                  call [scanf]
+    50 0000003F 83C408                          add esp, 4*2
+    51                                  
+    52                                          ; moving a into ax
+    53 00000042 66A1[00000000]                  mov ax, [a]
+    54 00000048 98                              cwde ; converting the word into a double
+    55 00000049 89C3                            mov ebx, eax ; ebx now has a
+    56                                  
+    57                                          ; moving b into ax
+    58 0000004B 66A1[02000000]                  mov ax, [b]
+    59 00000051 98                              cwde ; converting to eax
+    60                                          
+    61 00000052 01D8                            add eax, ebx ; eax has the sum of the two
+    62 00000054 A3[04000000]                    mov [sum], eax
+    63                                          
+    64                                          ; printing the result
+    65 00000059 50                              push  eax              
+    66 0000005A 68[2C000000]                    push  dword message_final_hexa
+    67 0000005F FF15[00000000]                  call  [printf]
+    68 00000065 83C408                          add  esp,4*2
+    69                                  
+    70                                          ; exit(0)
+    71 00000068 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    72 0000006A FF15[00000000]                  call    [exit]       ; call exit to terminate the program

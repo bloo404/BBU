@@ -1,0 +1,91 @@
+     1                                  ; A string containing n binary representations on 8 bits is given as a character string.
+     2                                  ; Obtain the string containing the numbers corresponding to the given binary representations.
+     3                                  ; Example:
+     4                                  ; Given: '10100111b', '01100011b', '110b', '101011b'
+     5                                  ; Obtain: 10100111b, 01100011b, 110b, 101011b
+     6                                  
+     7                                  bits 32 ; assembling for the 32 bits architecture
+     8                                  
+     9                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+    10                                  global start        
+    11                                  
+    12                                  ; declare external functions needed by our program
+    13                                  extern exit, printf               ; tell nasm that exit exists even if we won't be defining it
+    14                                  extern valoare
+    15                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    16                                  import printf msvcrt.dll
+    17                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    18                                  
+    19                                  ; our data is declared here (the variables needed by our program)
+    20                                  segment data use32 class=data
+    21                                    ;  a db '10100111b', '01100011b', '110b', '101011b'
+    22 00000000 31313062                    a db '110b'
+    23                                      len_a equ $-a
+    24 00000004 00<rept>                    solution times len_a db 0
+    25 00000008 00                          sum db 0
+    26 00000009 256200                      format db "%b",0
+    27 0000000C 2C2000                      comma db ", ",0
+    28                                      
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32 00000000 B904000000                      mov ecx, len_a
+    33 00000005 E351                            jecxz middle
+    34 00000007 BE00000000                      mov esi, 0 ; index for a
+    35 0000000C BF00000000                      mov edi, 0 ; index for solution
+    36                                          calculate:
+    37 00000011 BB00000000                          mov ebx, 0
+    38 00000016 8A9E[00000000]                      mov bl, [a + esi]
+    39 0000001C 80EB30                              sub bl, 30h
+    40 0000001F 80FB01                              cmp bl, 1h ; bl is computed here
+    41 00000022 7618                                jbe zero_or_one
+    42 00000024 7700                                ja b ; for my mental health
+    43                                              b:
+    44 00000026 8A15[08000000]                          mov dl, byte [sum]
+    45 0000002C 8897[04000000]                          mov [solution + edi], dl
+    46 00000032 C605[08000000]00                        mov byte [sum], 0
+    47 00000039 47                                      inc edi
+    48 0000003A EB17                                    jmp neither
+    49                                              zero_or_one:
+    50 0000003C 66B80000                                mov ax, 0
+    51 00000040 A0[08000000]                            mov al, byte [sum] ; putting the sum somewhere ;1) iau parametru de pe stiva 2) grija la registri
+    52 00000045 53                                      push ebx
+    53 00000046 50                                      push eax
+    54                                  ;                mov dl, 2 ; 2 into dl
+    55                                  ;                mul dl ; multiplying al with 2, even if the result is in ax, it doesn t exceed 8 bits
+    56                                  ;                mov byte [sum], al
+    57                                  ;                add byte [sum], bl    
+    58 00000047 E8(00000000)                            call valoare
+    59 0000004C A2[08000000]                            mov byte [sum], al
+    60 00000051 EB00                                    jmp neither ; for my mental health
+    61                                              neither:
+    62 00000053 46                                      inc esi
+    63 00000054 E2BB                            loop calculate
+    64 00000056 EB02                            jmp no_middle
+    65                                  
+    66                                          middle:
+    67 00000058 E32B                            jecxz final
+    68                                  
+    69                                          no_middle:
+    70 0000005A 89F9                            mov ecx, edi 
+    71 0000005C BF00000000                      mov edi, 0
+    72                                          
+    73                                          ; printing but something goes wrong idk where
+    74                                          printing:        
+    75 00000061 B800000000                          mov eax, 0
+    76 00000066 8A87[04000000]                      mov al, byte [solution + edi]
+    77 0000006C 60                                  pushad
+    78                                  ;            push ecx 
+    79 0000006D 68[0C000000]                        push dword comma
+    80 00000072 50                                  push eax
+    81 00000073 68[09000000]                        push dword format
+    82 00000078 FF15[00000000]                      call [printf]
+    83 0000007E 83C40C                              add esp, 4*3
+    84 00000081 61                                  popad
+    85                                              ;            pop ecx
+    86 00000082 47                                  inc edi
+    87 00000083 E2DC                            loop printing
+    88                                          final:
+    89                                          ; exit(0)
+    90 00000085 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    91 00000087 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

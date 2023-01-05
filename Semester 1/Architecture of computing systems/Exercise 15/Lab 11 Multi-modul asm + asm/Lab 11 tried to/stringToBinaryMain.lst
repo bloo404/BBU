@@ -1,0 +1,68 @@
+     1                                  bits  32
+     2                                  global  start
+     3                                  
+     4                                  extern  printf, exit
+     5                                  import  printf msvcrt.dll
+     6                                  import  exit msvcrt.dll
+     7                                  
+     8                                  ;extern stringToBinary
+     9                                  
+    10                                  ; A string containing n binary representations on 8 bits is given as a character string.
+    11                                  ; Obtain the string containing the numbers corresponding to the given binary representations.
+    12                                  ; Example:
+    13                                  ; Given: '10100111b', '01100011b', '110b', '101011b'
+    14                                  ; Obtain: 10100111b, 01100011b, 110b, 101011b
+    15                                  
+    16                                  segment  data use32 class=data
+    17 00000000 313031303031313162-         a db '10100111b', '01100011b', '110b', '101011b'
+    17 00000009 303131303030313162-
+    17 00000012 313130623130313031-
+    17 0000001B 3162               
+    18                                      len_a equ $-a ; length of a
+    19 0000001D 00                          new_number db 0b
+    20 0000001E <res 0000001D>              numbers_array resb len_a
+    21                                      
+    22                                  segment  code use32 class=code
+    23                                  start:
+    24 00000000 B91D000000                  mov ecx, len_a
+    25 00000005 E35C                        jecxz finetti
+    26 00000007 BE00000000                  mov esi, 0
+    27 0000000C BF00000000                  mov edi, 0
+    28 00000011 B800000000                  mov eax, 0
+    29                                      conversion:
+    30 00000016 8A87[00000000]                  mov al, byte [a + edi] ; takes charachter by charachter
+    31 0000001C 47                              inc edi ; increase location address index
+    32 0000001D 2C30                            sub al, 30h ; substract 30 so we remain with the value
+    33 0000001F 3C01                            cmp al, 1h ; compare al with 1
+    34 00000021 7704                            ja b    ; if above it s b
+    35 00000023 741A                            je one ; if equal it s 1
+    36 00000025 7238                            jb zero ; if below it s 0
+    37                                          ; B CASE
+    38                                          ; if our character is B then we would want for the number to be added to the list and reset the value of this called number
+    39                                          b:
+    40 00000027 8A1D[1D000000]                      mov bl, byte [new_number] ; ebx takes the value of the new number
+    41 0000002D 8898[1E000000]                      mov byte [numbers_array + eax], bl ; adding to the location is now possible
+    42 00000033 83C001                              add eax, 1 ; increase the index
+    43 00000036 C605[1D000000]00                    mov byte [new_number], 0 ; clear the new number
+    44 0000003D EB22                                jmp neither ; jump to the end of the loop tasks
+    45                                          ; 1 CASE
+    46                                          ; if our character is 1 then it means we have to 
+    47                                          one:
+    48 0000003F D0E0                                shl al, 1
+    49 00000041 8886[1D000000]                      mov [new_number + esi], al
+    50 00000047 D025[1D000000]                      shl byte [new_number], 1
+    51 0000004D 8A87[00000000]                      mov al, byte [a+edi]
+    52 00000053 2C30                                sub al, 30h
+    53 00000055 0086[1D000000]                      add byte [new_number + esi], al
+    54 0000005B 46                                  inc esi
+    55 0000005C 47                                  inc edi
+    56 0000005D EB02                                jmp neither
+    57                                          zero:
+    58 0000005F EB00                                jmp neither
+    59                                          neither:
+    60 00000061 E2B3                        loop conversion
+    61                                  
+    62                                  	finetti:
+    63                                  
+    64 00000063 6A00                        push 0
+    65 00000065 FF15[00000000]          	call [exit]
