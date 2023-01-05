@@ -1,4 +1,5 @@
-# 🎓Computer Science Projects (english)
+# 🎓Computer Science Projects
+Student years in Faculty of Mathematics and Computer Science, Computer Science english section.
 Efforts for homeworks, learning, preparing and studying.
 ##  🟣 Year 1
 <br/>  &emsp; ⚪ **Semester 1**
@@ -10,7 +11,7 @@ Efforts for homeworks, learning, preparing and studying.
 <br/>  &emsp; &emsp; &emsp; ■ [Analysis](https://github.com/bloo404/University-Projects/tree/main/Semester%201/Analysis)
 <br/>  &emsp; &emsp; &emsp; ■ [Computational Logic](https://github.com/bloo404/University-Projects/tree/main/Semester%201/Computational%20logic)
 <br/> &emsp; &emsp; 🎡 **Extra (non-mandatory)**:
-<br/>  &emsp; &emsp; &emsp; ■ Communication and profeesional development in informatics
+<br/>  &emsp; &emsp; &emsp; ■ Communication and professional development in informatics
 <br/>  &emsp; &emsp; &emsp; ■ [Educational psychology](https://github.com/bloo404/University-Projects/tree/main/Semester%201/Educational%20psychology)
 <br/>  &emsp; ⚪ **Semester 2**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
