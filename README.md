@@ -26,14 +26,14 @@ Efforts for homeworks, learning, preparing and studying.
 ## 🟣 Year 2
 <br/>  &emsp; ⚪ **Semester 3**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
-<br/>  &emsp; &emsp; &emsp; ■ Computer networks
-<br/>  &emsp; &emsp; &emsp; ■ Functional and logical programming
-<br/>  &emsp; &emsp; &emsp; ■ Advanced programming methods
-<br/>  &emsp; &emsp; &emsp; ■ Databases
+<br/>  &emsp; &emsp; &emsp; ■ [Computer networks](https://github.com/bloo404/University-Projects/tree/main/Semester%203/Computer%20Networks)
+<br/>  &emsp; &emsp; &emsp; ■ [Functional and logical programming](https://github.com/bloo404/University-Projects/tree/main/Semester%203/Functional%20and%20logical%20programming)
+<br/>  &emsp; &emsp; &emsp; ■ [Advanced programming methods](https://github.com/bloo404/University-Projects/tree/main/Semester%203/Advanced%20programming%20methods)
+<br/>  &emsp; &emsp; &emsp; ■ [Databases](https://github.com/bloo404/University-Projects/tree/main/Semester%203/Databases)
 <br/> &emsp; &emsp; 🧠 **Science**:
-<br/>  &emsp; &emsp; &emsp; ■ Probabilities and statistics
+<br/>  &emsp; &emsp; &emsp; ■ [Probabilities and statistics](https://github.com/bloo404/University-Projects/tree/main/Semester%203/Probabilities%20and%20statistics)
 <br/> &emsp; &emsp; 🎡 **Extra (mandatory)**:
-<br/>  &emsp; &emsp; &emsp; ■ English C1-C2 level
+<br/>  &emsp; &emsp; &emsp; ■ [English C1-C2 level](https://github.com/bloo404/University-Projects/tree/main/Semester%203/English)
 <br/> &emsp; &emsp; 🎡 **Extra (non-mandatory)**:
 <br/> &emsp; &emsp; &emsp; ■ Theory and methodology of instructing. Theory and methodology of evaluation
 <br/>  &emsp; ⚪ **Semester 4**
