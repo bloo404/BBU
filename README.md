@@ -1,27 +1,5 @@
 # 🎓Computer Science Projects
 # Year 1
-## ➊ Semester 1
-<br/> Computers:
-#### ■ Programming fundamentals
-#### ■ Architecture of computing systems
-<br/> Science:
-#### ■ Algebra
-#### ■ Analysis
-#### ■ Computational Logic
-<br/> Extra:
-#### ■ Communication and profeesional development in informatics
-#### ■ Educational psychology
-## ➋ Semester 2
-<br/> Computers:
-#### ■ Graph algorithms
-#### ■ Data structures and algorithms
-#### ■ Object Oriented Programming
-#### ■ Operating Systems
-<br/> Science:
-#### ■ Geometry
-#### ■ Dynamical systems
-<br/> Extra:
-#### ■ Pedagogy fundamentals
 # Year 2
 ## ➋ Semester 3
 <br/> Computers:
