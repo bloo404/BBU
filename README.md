@@ -1,6 +1,6 @@
 # 🎓Computer Science Projects
-# [Year 1] (https://github.com/bloo404/BBU-Projects-Year-1)
-# [Year 2] ()
+# [Year 1](https://github.com/bloo404/BBU-Projects-Year-1)
+# [Year 2]()
 ## ➋ Semester 3
 <br/> Computers:
 #### ■ Computer networks
@@ -17,7 +17,7 @@
 <br/> Computers:
 <br/> Science:
 <br/> Extra:
-# [Year 3] ()
+# [Year 3]()
 ## ➋ Semester 5
 <br/> Computers:
 <br/> Science:
