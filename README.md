@@ -51,5 +51,4 @@ Efforts for homeworks, learning, preparing and studying.
 <br/> &emsp; &emsp; 🎡 **Extra**:
 
 ## Extra Stuff
-[Outside university](![Partea a2-a](https://user-images.githubusercontent.com/43817879/210842828-384d6fad-9fb0-4b16-a88e-ec6153131f23.png)
-)
+[Outside university](https://github.com/bloo404/University-Projects/tree/main/ExtraStuff)
