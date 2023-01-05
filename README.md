@@ -24,6 +24,7 @@ Efforts for homeworks, learning, preparing and studying.
 <br/>  &emsp; &emsp; &emsp; ■ Dynamical systems
 <br/> &emsp; &emsp; 🎡 **Extra (non-mandatory)**:
 <br/>  &emsp; &emsp; &emsp; ■ [Pedagogy fundamentals](https://github.com/bloo404/University-Projects/tree/main/Semester%202/Pedagogy%20fundamentals)
+<br/> &emsp; &emsp; &emsp; ■ Entrepreneurship fundamentals
 ## 🟣 Year 2
 <br/>  &emsp; ⚪ **Semester 3**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
