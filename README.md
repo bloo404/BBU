@@ -1,7 +1,7 @@
 # 🎓Computer Science Projects
 # Year 1
 ## ➊ Semester 1
-### Computers:
+<br/> Computers:
 #### ■ Programming fundamentals
 #### ■ Architecture of computing systems
 ### Science:
