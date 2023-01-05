@@ -1,0 +1,3 @@
+C:/Users/bulat/Desktop/Materii/Computer networks/Testing/cmake-build-debug/CMakeFiles/Testing.dir
+C:/Users/bulat/Desktop/Materii/Computer networks/Testing/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bulat/Desktop/Materii/Computer networks/Testing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
