@@ -4,52 +4,47 @@
 <br/> Computers:
 #### ■ Programming fundamentals
 #### ■ Architecture of computing systems
-### Science:
+<br/> Science:
 #### ■ Algebra
 #### ■ Analysis
 #### ■ Computational Logic
-### Extra:
+<br/> Extra:
 #### ■ Communication and profeesional development in informatics
 #### ■ Educational psychology
-
 ## ➋ Semester 2
-### Computers:
+<br/> Computers:
 #### ■ Graph algorithms
 #### ■ Data structures and algorithms
 #### ■ Object Oriented Programming
 #### ■ Operating Systems
-### Science:
+<br/> Science:
 #### ■ Geometry
 #### ■ Dynamical systems
-### Extra:
+<br/> Extra:
 #### ■ Pedagogy fundamentals
-
 # Year 2
 ## ➋ Semester 3
-### Computers:
+<br/> Computers:
 #### ■ Computer networks
 #### ■ Functional and logical programming
 #### ■ Advanced programming methods
 #### ■ Databases
-### Science:
+<br/> Science:
 #### ■ Probabilities and statistics
-### Extra (mandatory):
+<br/> Extra (mandatory):
 #### ■ English C1-C2 level
-### Extra (non-mandatory):
+<br/> Extra (non-mandatory):
 #### ■ Theory and methodology of instructing. Theory and methodology of evaluation
-
 ## ➋ Semester 4
-### Computers:
-### Science:
-### Extra:
-
+<br/> Computers:
+<br/> Science:
+<br/> Extra:
 # Year 3
 ## ➋ Semester 5
-### Computers:
-### Science:
-### Extra:
-
+<br/> Computers:
+<br/> Science:
+<br/> Extra:
 ## ➋ Semester 6
-### Computers:
-### Science:
-### Extra:
+<br/> Computers:
+<br/> Science:
+<br/> Extra:
