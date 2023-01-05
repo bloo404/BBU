@@ -1,0 +1,31 @@
+brainstorming
+
+K12 students at a workshop
+
+introduction:
+
+						Leo
+	Computer science is not only words, math, complex stuff, electrical wires, it s more.
+	Computer science gives life to computers through games, virtual reality, minecraft
+	coding is not ALWAYS coding into a cave with the hoodie on
+	coding is for everyone, even for people who are not as good at math
+	This is our perspective on why you should or should not choose
+computer science:
+
+arguments:
+
+					Iana:
+	pro: create a computer that talks to you, help your grandma with her groceries 
+	list, help the city with a cool ticket machine, create a robot that dances with 
+	you, 
+	
+					Leo:
+	you can create tools that do your homework faster than you would, and overall it saves you 
+	time giving you more time to have fun
+
+					Iana:
+	con: it requires work, patience and dedication, but with a lot of imagination
+	you can build your language, there was someone who created cow language
+	where all code is just moo written in different ways 
+
+
