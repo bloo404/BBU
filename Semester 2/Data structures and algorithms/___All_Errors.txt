@@ -1,0 +1,9 @@
+CorrelationId: ef80d81c-5dfe-429b-9bef-7a6cc6ff29b2
+UTC DateTime: 25/06/2022 17:30:59
+
+The following files/folders have not been downloaded
+0. Lectures/Lecture01 - ADT, DS, containers, pseudocode/Lecture01 - notes
+1. Lectures/Lecture02 - DynamicArray, Matrix/notes
+2. Lectures/Lecture03 - Iterators, Containers/notes
+3. Lectures/Lecture04 - Containers/notes
+4. Lectures/Lecture05 - List ADT, LinkedLists/notes

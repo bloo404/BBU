@@ -1,0 +1,78 @@
+Containers - store data structures
+
+add(element)
+remove(element)
+find(element)
+
+Abstract data types - type of element
+
+Data structures - container -> where does the element go, and how do we find it
+
+Strategy on how to store any structures of elements/arrays
+
+Dynamic arrays
+[e|e|e|e]
+so when adding smth else we create a new array and put the initial array and another element
+
+Data structure -> contains elements and uses them
+
+Container -> where we call functions
+
+BAG -> container adt -> multiset
+	contains elements in no partitions
+	there in no position
+	contains duplicate elements
+	there is no order
+	need to specify what operations the bag does and what am i expecting from the operations
+	-> operations
+	B ={ b | b is a bag with element of the bag blm)
+		*b means bag
+		init(b) 	*initializes bag
+		pre: conditions    (pre and post function => pre condition to enter the function and post condition after the pre condition is fulfilled and post
+					condition can be completed)
+		post: b e B
+
+		add(b, e)
+			pre: b e B, e e TElem
+			post: b`, b` e B, b`= b U {e} ( addition )
+		
+		remove(b, e)
+			pre: b e B, e e TElem
+			post: b` is a bag, b` = b\{e}, return True if it removed an element from the bag and False if the element did not exist in the bag
+		
+		find(b, e)
+			pre: b e B, e e TElem
+			post: True if e is in the bag and false if it does not appear in the bag
+
+		nbOccurrences(b, e)
+			pre: b e B, e e TElem(ea)
+			post: return number of how many times (occurrences) the element appears 
+
+		destroy(b):
+			pre: b e B
+			post: b is destroyed ... 
+	
+		size(b):
+			pre: b e B
+			post: size <- numberOfElements in b
+
+		find -> search
+
+		iterator(b, i)
+			pre: b e B
+			post: i e I, i is an iterator over b
+		 
+		I = {i | i is an iterator b e B}
+
+	Bag Items:
+		init(i, b)
+			pre: b e B
+			post: i e I, i is an iterator
+		
+		getCurrent(i, e)
+			pre: i e I
+			post: e e TElem, e is the element the currently i reffers to, 
+			getCurrentεTElem, getCurrentis the current element from ithrows: exception if i is not valid
+
+		
+		
