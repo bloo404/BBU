@@ -1,0 +1,19 @@
+% Remove the elements from N to N from a list
+[1,2,3,4,5,6,7,8]3 => [1,2,4,5,7,8]
+
+% Last Name: Bulat | First Name: Jaclina-Iana
+% Subgroup: 921/2
+% No. to problem: 33
+delete_N([],_,_,[]).
+delete_N([_|T],N,S,R):-    
+	mod(S,N)=:=0,    
+	S1 is S+1,    
+	delete_N(T,N,S1,R).
+delete_N([H|T],N,S,[H|R]):-    
+	mod(S,N)=\=0,    
+	S1 is S+1,    
+	delete_N(T,N,S1,R).
+
+main_delete_N(L,N,R):-    
+	delete_N(L,N,1,R).
+

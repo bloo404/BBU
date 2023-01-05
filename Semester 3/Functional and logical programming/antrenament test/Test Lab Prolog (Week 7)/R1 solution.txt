@@ -1,0 +1,34 @@
+negative([],[]).
+negative([H|T],R):-
+    H>0,
+    negative(T,R).
+negative([H|T],[H|R]):-
+    H=<0,
+    negative(T,R).
+%--------------------
+positive([],[]).
+positive([H|T],[H|R]):-
+    H>=0,
+    positive(T,R).
+positive([H|T],R):-
+    H<0,
+    positive(T,R).
+%---------------------
+minimum([X],X):-
+    !.
+minimum([H,H2|T],R):-
+    H2>H,
+    minimum([H|T],R).
+minimum([H,H2|T],R):-
+    H2=<H,
+    minimum([H2|T],R).
+%--------------------
+two_lists(L,N,P):-
+    negative(L,N),
+    positive(L,P).
+
+minimum_of_two_lists(L,N1,P1):-
+    positive(L,P),
+    negative(L,N),
+    minimum(N,N1),
+    minimum(P,P1).

@@ -1,0 +1,118 @@
+% https://www.brainzilla.com/logic/zebra/wines-and-cheeses/
+% Author of solution: Bulat Jaclina-Iana (with the guidance of the github from Calin Alina)
+% Five friends are side by side talking about their favorite wines and cheeses. 
+% Can you find out whose favorite wine is Côtes de Rhône?
+/*
+	1. The oldest woman is next to the woman who likes Provolone.	
+	2. The woman wearing the White shirt is somewhere between the woman wearing the Purple shirt and the woman who likes Zweigelt, in that order.
+	3. The woman that plays Bowling is next to the woman wearing the Green shirt.
+	4. At the fourth position is the lady wearing the Red shirt.
+	5. Michele is somewhere to the right of the woman wearing the Blue shirt.
+	6. Tina is next to the woman who likes Bowling.
+	7. At one of the ends is the lady who practices Yoga.
+	8. The woman wearing the White shirt is next to the woman that prefers Provolone.
+	9. Dawn is exactly to the left of the 35-year-old woman.
+	10. At the fourth position is the woman that plays Bowling.
+	11. Cheddar is the favorite cheese of the woman wearing the Red shirt.
+	12. The lady who likes Cooking is exactly to the left of the 55-year-old woman.
+	13. The 45-year-old woman is somewhere between the woman wearing the White shirt and the woman who likes Cheddar, in that order.
+	14. The 35-year-old woman likes Pinot Noir.
+	15. Patricia is exactly to the right of the lady that likes Painting.
+	16. The lady who likes Writing also likes Gamay.
+	17. The 45-year-old woman is next to the woman who likes Bowling.
+	18. The woman who likes Roquefort cheese is exactly to the left of the woman who likes Writing.
+	19. At one of the ends is the lady that likes Painting.
+	20. The woman who likes Brie is next to the woman who likes Provolone.
+	21. The lady wearing the White shirt is somewhere between the 50-year-old lady and the lady wearing the Blue shirt, in that order.
+	22. The 55-year-old woman is exactly to the right of the woman who likes Mencía.
+*/
+
+:- use_rendering(table, [header(woman('Shirt','Name','Wine','Cheese','Hobby','Age'))]).
+nextToLeft(A, B, Ls) :- append(_, [A,B|_], Ls).
+
+nextToRight(A,B, Ls) :- append(_, [B,A|_], Ls).
+
+nextTo(A,B, Ls):-append(_,[B,A|_], Ls).
+nextTo(A,B, Ls):-append(_,[A,B|_], Ls).
+
+atAnyEnd(A, Ls):- Ls=[A|_].
+atAnyEnd(A, Ls):- Ls=[_,_,_,_,A].
+
+somewhereLeft(A,B, Ls):- append(_, [A, B|_], Ls).
+somewhereLeft(A,B, Ls):- append(_, [A,_, B|_], Ls).
+somewhereLeft(A,B, Ls):- append(_, [A,_,_, B|_], Ls).
+somewhereLeft(A,B, Ls):- append(_, [A,_,_,_, B|_], Ls).
+
+somewhereBetween(A, B, C, Ls):- somewhereLeft(A, B, Ls), somewhereLeft(B,C, Ls).
+
+women(Women) :-
+	% each woman in the group is represented as:
+	%      woman('Shirt','Name','Wine','Cheese','Hobby','Age')
+	
+    % Defining basics
+    
+    length(Women, 5),                    
+    
+    % Youngest=woman(_,_,_,_,_,35),
+    Oldest=woman(_,_,_,_,_,55),             
+    
+    % Next to someone
+    
+    nextTo(Oldest, woman(_,_,_,provolone,_,_), Women),								% 1
+    nextTo(woman(_,_,_,_,bowling,_), woman(green,_,_,_,_,_), Women),				% 3
+    nextTo(woman(_,tina,_,_,_,_), woman(_,_,_,_,bowling,_), Women),					% 6
+    nextTo(woman(white,_,_,_,_,_), woman(_,_,_,provolone,_,_), Women),				% 8
+    nextTo(woman(_,_,_,_,_,45), woman(_,_,_,_,bowling,_), Women),					% 17
+    nextTo(woman(_,_,_,brie,_,_), woman(_,_,_,provolone,_,_), Women),				% 20
+    
+    % Left to someone
+    
+    nextToLeft(woman(_,dawn,_,_,_,_), woman(_,_,_,_,_,35), Women),    				% 9
+    nextToLeft(woman(_,_,_,roquefort,_,_), woman(_,_,_,_,writing,_), Women),        % 18                
+    nextToLeft(woman(_,_,_,_,painting,_), woman(_,patricia,_,_,_,_), Women),        % 15                      
+    nextToLeft(woman(_,_,_,_,cooking,_), woman(_,_,_,_,_,55), Women),				% 12
+    nextToLeft(woman(_,_,mencia,_,_,_), woman(_,_,_,_,_,55), Women), 				% 22  
+    
+    % Also basics
+    
+    Women=[_,_,_,woman(red,_,_,_,_,_),_],                                           %  4
+    Women=[_,_,_,woman(_,_,_,_,bowling,_),_],										% 10
+    
+    % Basics
+    
+    member(woman(red,_,_,cheddar,_,_), Women),                                      % 11
+    member(woman(_,_,gamay,_,writing,_), Women),									% 16
+    member(woman(_,_,pinot,_,_,35), Women),											% 14
+
+    % Between
+    
+    somewhereBetween(woman(purple,_,_,_,_,_), woman(white, _,_,_,_,_), woman(_,_,zweigelt,_,_,_), Women), % 2
+    somewhereBetween(woman(white,_,_,_,_,_), woman(_, _,_,_,_,45), woman(_,_,_,cheddar,_,_), Women), 	  % 13
+    somewhereBetween(woman(_,_,_,_,_,50), woman(white, _,_,_,_,_), woman(blue,_,_,_,_,_), Women), 		  % 21
+    
+    % Somewhere right/left translated to left
+    
+    somewhereLeft(woman(blue, _,_,_,_,_), woman(_,michele,_,_,_, _), Women),  		% 5
+    
+    % Ends
+    
+    atAnyEnd(woman(_,_,_,_,yoga,_), Women),											% 7
+    atAnyEnd(woman(_,_,_,_,painting,_), Women),										% 19
+
+    % The last member that wasn't completed by the propositions.
+	
+    member(woman(_,angela,_,_,_,_), Women),
+    member(woman(_,_,cotes,_,_,_), Women),
+    member(woman(_,_,_,gouda,_,_), Women),
+   	member(woman(_,_,_,_,_,40), Women). 
+    
+wines_and_cheeses(Woman):-
+   	women(WomenList),
+    member(woman(_,Woman,cotes,_,_,_),WomenList),!.
+
+/* 	Example to run:
+		wines_and_cheeses(W).
+	Result:
+		Angela	
+*/
+	

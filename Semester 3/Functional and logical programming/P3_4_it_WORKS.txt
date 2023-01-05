@@ -1,0 +1,46 @@
+% 4) Find all sublists of list L where they are ascending sublists of L
+
+% subs(): sublists of the current list
+% flow model: (i,i) (i,o)
+% params: L - list, R - list for output
+subs([],[]).
+subs([H|T],[H|R]):-
+    subs(T,R).
+subs([_|T],R):-
+    subs(T,R).
+
+% asc(): verifies if a list is ascending
+% flow model: (i,i) (i,o)
+% params: L - list, R - flag for output
+asc([],-1):-
+    write('List is empty'),
+    nl.
+asc([_],_).
+asc([H1,H2|T],1):-
+    H1<H2,
+    asc([H2|T],1).
+asc([H1,H2|_],R):-
+    H1>H2,
+	R is 0,
+    !.
+
+% mainAsc(): verifies if a list is ascending
+% flow model: (i) (o)
+% params: L - list    
+mainAsc(L):-
+    L = [H1,H2|_],
+    H1<H2,
+    asc(L,1).
+
+% onesol(): creates one solution
+% flow model: (i,i) (i,o)
+% params: L - list, S - solution 
+onesol(L,S):-
+    subs(L,S),
+    mainAsc(S).
+
+% allsols(): looks for all solutions
+% flow model: (i,i) (i,o)
+% params: L - list, R2 - list of all sublists that are valid for the given condition
+allsols(L,R2):-
+    findall(X, onesol(L,X),R2).

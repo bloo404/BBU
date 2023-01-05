@@ -1,0 +1,19 @@
+union([],[],[]).
+union([H|T],[],[H|R]):-
+    union(T,[],R).
+union([],[H|T],[H|R]):-
+    union([],T,R).
+union([H|T],[H2|T2],[H,H2|R]):-
+    union(T,T2,R).
+
+remove_dups([],[]).
+remove_dups([First | Rest], NewRest) :- 
+    member(First, Rest), 
+    remove_dups(Rest, NewRest).
+remove_dups([First | Rest], [First | NewRest]) :- 
+    not(member(First, Rest)), 
+    remove_dups(Rest, NewRest). 
+
+main(A,B,R,R1):-
+    union(A,B,R),
+    remove_dups(R,R1).

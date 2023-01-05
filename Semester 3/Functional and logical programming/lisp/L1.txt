@@ -1,0 +1,81 @@
+; 4.
+; a) Write a function to return the sum of two vectors.
+
+(defun vector_sum (a b) ; define function
+    (if (null a)        ; if a is null, it will return nil (null/false)
+        nil
+     (if (null b)
+        nil
+        (cons (+ (car a) (car b)) (vector_sum (cdr a) (cdr b))) ; otherwise it adds the top 2 elements from the two vectors/lists
+    ))
+)
+
+(print (vector_sum '(1 2 3) '(4 5 6)))
+; => (5 7 9)
+
+
+; b) Write a function to get from a given list the list of all atoms, on any
+;  level, but on the same order. Example:
+;  (((A B) C) (D E)) ==> (A B C D E)
+
+(defun my_append (l k) ; define function my append with l list and k element
+    (if (null l) ; if list is null, returns the only element existing (k)
+        k
+        (cons (car l) (my_append (cdr l) k)) ; otherwise it appends to the end the k value and constructs a new list with the top at the first element and end at the last
+    )
+)
+
+(defun all_atoms (l)
+    (cond
+        ((null l) nil) ; if l is null, it returns null list
+        ((listp (car l)) (my_append (all_atoms (car l)) (all_atoms (cdr l)))) ; appends to the list l what s at the end of it
+        (T (cons (car l) (all_atoms (cdr l)))) ; 
+    )
+)
+
+(print (all_atoms '(((A B) C) (D E))))
+;=> (A B C D E)
+
+; c) Write a function that, with a list given as parameter, inverts only continuous
+;  sequences of atoms. Example:
+;  (a b c (d (e f) g h i)) ==> (c b a (d (f e) i h g))
+
+(defun my_reverse (l)
+    (if (null l)
+        nil ; if list is null, returns null
+        (my_append (my_reverse (cdr l)) (list (car l))) ; otherwise constructs a new list with the last element to the beginning
+    )        
+)
+
+(defun inv_list (l aux)
+    (cond
+        ((null l) (my_reverse aux)) ; if l is null, it applies reverse on the aux list
+        ((listp (car l)) (my_append (my_reverse aux) (cons (inv_list (car l) nil) (inv_list (cdr l) nil))))  ; appends to the reversed aux element by element from l constructed inverse
+        (T (inv_list (cdr l) (my_append aux (list (car l))))) ; true if the last elements of l are the first elements in aux
+    )
+)
+
+(print (inv_list '(a b c (d (e f) g h i)) nil))
+
+
+; d) Write a list to return the maximum value of the numerical atoms from a list, at superficial level.
+;   Example: A 1 V 4 5 3 C F ==> 5
+
+(defun my_max (a b)
+    (cond
+        ((and (not (numberp a)) (not (numberp b))) nil)
+        ((not (numberp a)) b)
+        ((not (numberp b)) a)
+        ((> a b) a)
+        (T b)
+    )
+)
+
+(defun max_list (l)
+    (if (null (cdr l)) 
+        (car l)
+        (my_max (car l) (max_list (cdr l)))
+    )
+)
+
+(print (max_list '(A 1 B 4 5 3 C F)))

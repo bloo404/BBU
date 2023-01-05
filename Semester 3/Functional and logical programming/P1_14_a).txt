@@ -1,0 +1,30 @@
+% a) Equality of two sets
+% isElementFound
+% Flow model (i,i,o)
+% Parameters: L - list, E - element to be found, O - output   
+isElementFound([],_,0).
+isElementFound(H,E,O):-
+	H =:= E,
+	O is 1.
+isElementFound([H|T],E,O):-
+    H=\=E,
+    isElementFound(T,E,O),
+    O is 0.
+
+% equalityOfSets
+% Flow model (i,i,o)
+% Parameters: L - list, L - list2, O - output 
+equalityOfSets([],[],0).
+equalityOfSets([],[_|_],0).
+equalityOfSets([_|_],[],0).
+equalityOfSets([H|T],H2,O2):-
+    isElementFound([H|T],H2,O),
+    O =:= 1,
+    O2 is 1.
+equalityOfSets([H|T],[H2|T2],O2):-
+    isElementFound([H|T],H2,O),
+	O =\= 1,
+    equalityOfSets(T,[H2|T2],O2).
+
+main(L,L2,O):-
+    equalityOfSets(L,L2,O).

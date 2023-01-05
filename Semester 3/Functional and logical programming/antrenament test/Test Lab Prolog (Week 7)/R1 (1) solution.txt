@@ -1,0 +1,36 @@
+gcd(0,0,-1).
+gcd(X,0,X):-
+    X>0,
+    !.
+gcd(0,X,X):-
+    X>0,
+    !.
+gcd(X,Y,Z):-
+    X>=Y,
+    X1 is X-Y,
+    gcd(X1,Y,Z).
+gcd(X,Y,Z):-
+    X<Y,
+    Y1 is Y-X,
+    gcd(X,Y1,Z).
+
+delete([],[]).
+delete([H|T],[H|R]):-
+    number(H),
+    mod(H,2)=:=0,
+    delete(T,R).
+delete([H|T],R):-
+    number(H),
+    mod(H,2)=:=1,
+    delete(T,R).
+delete([H|T],R):-
+    atomic(H),
+    delete(T,R).
+
+double([],[]).
+double([H|T],[H,H|R]):-
+    double(T,R).
+
+del_double(L,R2):-
+    delete(L,R),
+    double(R,R2).

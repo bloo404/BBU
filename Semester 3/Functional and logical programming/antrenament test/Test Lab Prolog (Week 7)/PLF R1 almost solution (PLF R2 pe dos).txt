@@ -1,0 +1,25 @@
+is_atom(_,_).
+is_atom(e,e):-
+   	atomic(e).
+is_atom(e,_):-
+    number(e).
+
+atom_in_list([],[]).
+atom_in_list([H|T],[H|R]):-
+    atomic(H),
+    atom_in_list(T,R).
+atom_in_list([H|T],R):-
+    number(H),
+    atom_in_list(T,R).
+
+reverse([],Z,Z).
+reverse([H|T],Z,Acc):-
+    atomic(H),
+    reverse(T,Z,[H|Acc]).
+reverse([H|T],Z,Acc):-
+    number(H),
+    reverse(T,Z,Acc).
+reverse([H|T],Z,Acc):-
+    is_list(H),
+    atom_in_list(H,R2),
+    reverse(T,Z,[H|Acc]).

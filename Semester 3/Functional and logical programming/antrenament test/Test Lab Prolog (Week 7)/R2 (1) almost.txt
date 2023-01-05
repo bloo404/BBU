@@ -1,0 +1,42 @@
+gcd(0,0,-1).
+gcd(X,0,X):-
+    X>0,
+    !.
+gcd(0,X,X):-
+    X>0,
+    !.
+gcd(X,Y,Z):-
+    X<Y,
+    X1 is X-Y,
+    gcd(X1,Y,Z).
+gcd(X,Y,Z):-
+    X=<Y,
+    Y1 is Y-X,
+    gcd(X,Y1,Z).
+
+product([],1).
+product([H|T],R):-
+    product(T,Others),
+    R is H*Others.
+
+delete([],[]).
+delete([H|T],[H|R]):-
+    mod(H,2)=:=0,
+    delete(T,R).
+delete([H|T],R):-
+    mod(H,2)=\=0,
+    delete(T,R).
+
+double([],[]).
+double([H|T],[H,H|R]):-
+    double(T,R).
+
+cmmmc(L,SCM):-
+    product(L,P),
+    gcd(L,GCD),
+    SCM is P/GCD.
+
+double_main(L,R1,CMMMC):-
+    delete(L,R),
+    double(R,R1),
+    cmmmc(R1,CMMMC).

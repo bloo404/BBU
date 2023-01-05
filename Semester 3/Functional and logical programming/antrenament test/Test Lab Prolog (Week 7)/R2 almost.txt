@@ -1,0 +1,29 @@
+maxim([],-1).
+maxim([H],H):-
+    !.
+maxim([H1,H2|T],R):-
+    H1>H2,
+    maxim([H1|T],R).
+maxim([H1,H2|T],R):-
+    H1=<H2,
+    maxim([H2|T],R).
+
+print_list([]):-
+    nl. 
+print_list([H|T]):-
+    write(H),
+	write(' '),
+	print_list(T).
+
+maxim_two_lists(L1,L2,M1,M2,R):-
+    maxim(L1,M1),
+    maxim(L2,M2),
+    A is M1*2, 
+    B is M2*2, 
+    write(A),
+    write(' '),
+    write(B),
+    write(' '),
+    nl,
+    append(A,B,R),
+    print_list(R).

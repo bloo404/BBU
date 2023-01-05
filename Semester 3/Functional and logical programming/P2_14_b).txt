@@ -1,0 +1,14 @@
+% b) select the n th element of a list
+% flow model (i,i,i,o)
+% parameters: L - list, i - current position, n - position of element, O - output
+selectElement([],1,_,0).
+selectElement([H|_],I,N,O):-
+    I=:=N,
+    O is H.
+selectElement([_|T],I,N,O):-
+    I=\=N,
+    I1 is I+1,
+    selectElement(T,I1,N,O).
+
+main(L,N,O):-
+    selectElement(L,1,N,O).
