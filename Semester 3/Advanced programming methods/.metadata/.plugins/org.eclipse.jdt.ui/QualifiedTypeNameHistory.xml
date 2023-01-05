@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Model.IVehicle"/>
+    <fullyQualifiedTypeName name="Model.Car"/>
+    <fullyQualifiedTypeName name="Model.Bike"/>
+    <fullyQualifiedTypeName name="Repository.IRepository"/>
+    <fullyQualifiedTypeName name="Model.Cube"/>
+    <fullyQualifiedTypeName name="Model.Sphere"/>
+    <fullyQualifiedTypeName name="Model.Cylinder"/>
+    <fullyQualifiedTypeName name="Controller.Controller"/>
+    <fullyQualifiedTypeName name="Model.IGeometricBody"/>
+    <fullyQualifiedTypeName name="Exceptions.InputException"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="Exceptions.MyException"/>
+</qualifiedTypeNameHistroy>

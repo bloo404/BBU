@@ -1,0 +1,8 @@
+package Model;
+
+import Exceptions.MyException;
+
+public class VarDeclStmt implements IStmt{
+	string name;
+	Type typ;
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\bulat\Desktop\Materii\APM\.metadata\.plugins\org.eclipse.jdt.core
+1226158116.index
+1865797976.index
+933812216.index
+1780632998.index
+1107312843.index
+246794996.index

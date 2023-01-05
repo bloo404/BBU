@@ -1,0 +1,632 @@
+----------------
+ExeStack:
+(int v;(v=ValueExp{e=int:4};((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+(v=ValueExp{e=int:4};((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v)))
+int v
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+(v=ValueExp{e=int:4};((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v)))
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v))
+v=ValueExp{e=int:4}
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v))
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}))
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:4
+Out:
+int:4
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:3
+Out:
+int:4
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:3
+Out:
+int:4
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:3
+Out:
+int:4
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:3
+Out:
+int:4
+int:3
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:2
+Out:
+int:4
+int:3
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:2
+Out:
+int:4
+int:3
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:2
+Out:
+int:4
+int:3
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:2
+Out:
+int:4
+int:3
+int:2
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:1
+Out:
+int:4
+int:3
+int:2
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:1
+Out:
+int:4
+int:3
+int:2
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:1
+Out:
+int:4
+int:3
+int:2
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:1
+Out:
+int:4
+int:3
+int:2
+int:1
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:0
+Out:
+int:4
+int:3
+int:2
+int:1
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+SymTable:
+vint:0
+Out:
+int:4
+int:3
+int:2
+int:1
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+SymTable:
+vint:0
+Out:
+int:4
+int:3
+int:2
+int:1
+int:0
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+(int v;(v=ValueExp{e=int:4};((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v))))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+(v=ValueExp{e=int:4};((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v)))
+int v
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+(v=ValueExp{e=int:4};((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v)))
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v))
+v=ValueExp{e=int:4}
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+((while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}));print(v))
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(while(Model.Expression.RelExp@2e817b38);(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}))
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:4
+Out:
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:4
+Out:
+int:4
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:3
+Out:
+int:4
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:3
+Out:
+int:4
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:3
+Out:
+int:4
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:3
+Out:
+int:4
+int:3
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:2
+Out:
+int:4
+int:3
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:2
+Out:
+int:4
+int:3
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:2
+Out:
+int:4
+int:3
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:2
+Out:
+int:4
+int:3
+int:2
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:1
+Out:
+int:4
+int:3
+int:2
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:1
+Out:
+int:4
+int:3
+int:2
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:1
+Out:
+int:4
+int:3
+int:2
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:1
+Out:
+int:4
+int:3
+int:2
+int:1
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+while(Model.Expression.RelExp@2e817b38)
+SymTable:
+vint:0
+Out:
+int:4
+int:3
+int:2
+int:1
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+print(v)
+SymTable:
+vint:0
+Out:
+int:4
+int:3
+int:2
+int:1
+FileTable:
+Heap:
+
+----------------
+ExeStack:
+SymTable:
+vint:0
+Out:
+int:4
+int:3
+int:2
+int:1
+int:0
+FileTable:
+Heap:
+

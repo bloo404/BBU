@@ -1,0 +1,269 @@
+----------------
+Id: 1
+ExeStack:
+(forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))};(print(v);print(ReadHeapExp{exp=a})))
+(int v;(Ref(int) a;(v=ValueExp{e=int:10};NewStmt{varName='a', ex=ValueExp{e=int:22}})))
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+(forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))};(print(v);print(ReadHeapExp{exp=a})))
+(Ref(int) a;(v=ValueExp{e=int:10};NewStmt{varName='a', ex=ValueExp{e=int:22}}))
+int v
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+(forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))};(print(v);print(ReadHeapExp{exp=a})))
+(Ref(int) a;(v=ValueExp{e=int:10};NewStmt{varName='a', ex=ValueExp{e=int:22}}))
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+(forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))};(print(v);print(ReadHeapExp{exp=a})))
+(v=ValueExp{e=int:10};NewStmt{varName='a', ex=ValueExp{e=int:22}})
+Ref(int) a
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+(forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))};(print(v);print(ReadHeapExp{exp=a})))
+(v=ValueExp{e=int:10};NewStmt{varName='a', ex=ValueExp{e=int:22}})
+SymTable:
+a(0, int)
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+(forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))};(print(v);print(ReadHeapExp{exp=a})))
+NewStmt{varName='a', ex=ValueExp{e=int:22}}
+v=ValueExp{e=int:10}
+SymTable:
+a(0, int)
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+(forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))};(print(v);print(ReadHeapExp{exp=a})))
+NewStmt{varName='a', ex=ValueExp{e=int:22}}
+SymTable:
+a(0, int)
+vint:10
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+(forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))};(print(v);print(ReadHeapExp{exp=a})))
+SymTable:
+a(1, int)
+vint:10
+Out:
+FileTable:
+Heap:
+1 -> int:22
+
+----------------
+Id: 1
+ExeStack:
+(print(v);print(ReadHeapExp{exp=a}))
+forkStmt{stmt=(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))}
+SymTable:
+a(1, int)
+vint:10
+Out:
+FileTable:
+Heap:
+1 -> int:22
+
+----------------
+Id: 1
+ExeStack:
+(print(v);print(ReadHeapExp{exp=a}))
+SymTable:
+a(1, int)
+vint:10
+Out:
+FileTable:
+Heap:
+1 -> int:22
+
+----------------
+Id: 2
+ExeStack:
+(WriteHeap(a, ValueExp{e=int:30});(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a}))))
+SymTable:
+a(1, int)
+vint:10
+Out:
+FileTable:
+Heap:
+1 -> int:22
+
+----------------
+Id: 1
+ExeStack:
+print(ReadHeapExp{exp=a})
+print(v)
+SymTable:
+a(1, int)
+vint:10
+Out:
+FileTable:
+Heap:
+1 -> int:22
+
+----------------
+Id: 2
+ExeStack:
+(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a})))
+WriteHeap(a, ValueExp{e=int:30})
+SymTable:
+a(1, int)
+vint:10
+Out:
+FileTable:
+Heap:
+1 -> int:22
+
+----------------
+Id: 1
+ExeStack:
+print(ReadHeapExp{exp=a})
+SymTable:
+a(1, int)
+vint:10
+Out:
+int:10
+FileTable:
+Heap:
+1 -> int:30
+
+----------------
+Id: 2
+ExeStack:
+(v=ValueExp{e=int:32};(print(v);print(ReadHeapExp{exp=a})))
+SymTable:
+a(1, int)
+vint:10
+Out:
+int:10
+FileTable:
+Heap:
+1 -> int:30
+
+----------------
+Id: 1
+ExeStack:
+SymTable:
+a(1, int)
+vint:10
+Out:
+int:10
+int:30
+FileTable:
+Heap:
+1 -> int:30
+
+----------------
+Id: 2
+ExeStack:
+(print(v);print(ReadHeapExp{exp=a}))
+v=ValueExp{e=int:32}
+SymTable:
+a(1, int)
+vint:10
+Out:
+int:10
+int:30
+FileTable:
+Heap:
+1 -> int:30
+
+----------------
+Id: 2
+ExeStack:
+(print(v);print(ReadHeapExp{exp=a}))
+SymTable:
+a(1, int)
+vint:32
+Out:
+int:10
+int:30
+FileTable:
+Heap:
+1 -> int:30
+
+----------------
+Id: 2
+ExeStack:
+print(ReadHeapExp{exp=a})
+print(v)
+SymTable:
+a(1, int)
+vint:32
+Out:
+int:10
+int:30
+FileTable:
+Heap:
+1 -> int:30
+
+----------------
+Id: 2
+ExeStack:
+print(ReadHeapExp{exp=a})
+SymTable:
+a(1, int)
+vint:32
+Out:
+int:10
+int:30
+int:32
+FileTable:
+Heap:
+1 -> int:30
+
+----------------
+Id: 2
+ExeStack:
+SymTable:
+a(1, int)
+vint:32
+Out:
+int:10
+int:30
+int:32
+int:30
+FileTable:
+Heap:
+1 -> int:30
+

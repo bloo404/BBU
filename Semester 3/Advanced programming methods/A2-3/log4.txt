@@ -1,0 +1,152 @@
+----------------
+ExeStack:
+(string varf;(varf=ValueExp{e=string:test.in};((openFile varf);(int varc;(varf varc;(print(varc);(varf varc;(print(varc);varf))))))))
+SymTable:
+Out:
+FileTable:
+----------------
+ExeStack:
+(varf=ValueExp{e=string:test.in};((openFile varf);(int varc;(varf varc;(print(varc);(varf varc;(print(varc);varf)))))))
+string varf
+SymTable:
+Out:
+FileTable:
+----------------
+ExeStack:
+(varf=ValueExp{e=string:test.in};((openFile varf);(int varc;(varf varc;(print(varc);(varf varc;(print(varc);varf)))))))
+SymTable:
+varfstring:
+Out:
+FileTable:
+----------------
+ExeStack:
+((openFile varf);(int varc;(varf varc;(print(varc);(varf varc;(print(varc);varf))))))
+varf=ValueExp{e=string:test.in}
+SymTable:
+varfstring:
+Out:
+FileTable:
+----------------
+ExeStack:
+((openFile varf);(int varc;(varf varc;(print(varc);(varf varc;(print(varc);varf))))))
+SymTable:
+varfstring:test.in
+Out:
+FileTable:
+----------------
+ExeStack:
+(int varc;(varf varc;(print(varc);(varf varc;(print(varc);varf)))))
+(openFile varf)
+SymTable:
+varfstring:test.in
+Out:
+FileTable:
+----------------
+ExeStack:
+(int varc;(varf varc;(print(varc);(varf varc;(print(varc);varf)))))
+SymTable:
+varfstring:test.in
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+(varf varc;(print(varc);(varf varc;(print(varc);varf))))
+int varc
+SymTable:
+varfstring:test.in
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+(varf varc;(print(varc);(varf varc;(print(varc);varf))))
+SymTable:
+varfstring:test.in
+varcint:0
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+(print(varc);(varf varc;(print(varc);varf)))
+varf varc
+SymTable:
+varfstring:test.in
+varcint:0
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+(print(varc);(varf varc;(print(varc);varf)))
+SymTable:
+varfstring:test.in
+varcint:15
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+(varf varc;(print(varc);varf))
+print(varc)
+SymTable:
+varfstring:test.in
+varcint:15
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+(varf varc;(print(varc);varf))
+SymTable:
+varfstring:test.in
+varcint:15
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+(print(varc);varf)
+varf varc
+SymTable:
+varfstring:test.in
+varcint:15
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+(print(varc);varf)
+SymTable:
+varfstring:test.in
+varcint:15
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+varf
+print(varc)
+SymTable:
+varfstring:test.in
+varcint:15
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+varf
+SymTable:
+varfstring:test.in
+varcint:15
+Out:
+FileTable:
+string:test.in java.io.BufferedReader@7daf6ecc
+----------------
+ExeStack:
+SymTable:
+varfstring:test.in
+varcint:15
+Out:
+FileTable:
