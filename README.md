@@ -4,7 +4,7 @@ Efforts for homeworks, learning, preparing and studying.
 <br/>  &emsp; ⚪ Semester 1
 <br/> &emsp; &emsp; 🖥️ Computers:
 <br/> &emsp; &emsp; &emsp;  ■ Programming fundamentals
-<br/>  &emsp; &emsp; &emsp; ■ Architecture of computing systems
+<br/>  &emsp; &emsp; &emsp; ■ [Architecture of computing systems](https://github.com/bloo404/University-Projects/tree/main/Semester%201/Architecture%20of%20computing%20systems)
 <br/> &emsp; &emsp; 🧠 Science:
 <br/>  &emsp; &emsp; &emsp; ■ Algebra
 <br/>  &emsp; &emsp; &emsp; ■ Analysis
