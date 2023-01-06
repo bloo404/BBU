@@ -1,5 +1,8 @@
+[UBB Faculty of Mathematics and Computer Science](https://www.cs.ubbcluj.ro/en/)
+
 # 🎓Computer Science Projects
 Student years in Faculty of Mathematics and Computer Science, Computer Science english section.
+
 Efforts for homeworks, learning, preparing and studying.
 ##  🟣 Year 1
 <br/>  &emsp; ⚪ **Semester 1**
@@ -54,3 +57,5 @@ Efforts for homeworks, learning, preparing and studying.
 
 ## Extra Stuff
 [Extra stuff from university](https://github.com/bloo404/University-Projects/tree/main/Stuff)
+------------------------------------------------------------------------------------------------------
+@me_and_my_peers
