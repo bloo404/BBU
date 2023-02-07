@@ -1,0 +1,2326 @@
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((((int v;int x);int y);v=ValueExp{e=int:0});repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+(((int v;int x);int y);v=ValueExp{e=int:0})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+((int v;int x);int y)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+int y
+(int v;int x)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+int y
+int x
+int v
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+int y
+int x
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+int y
+SymTable:
+vint:0
+xint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1});WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@466591b2);y=ValueExp{e=int:3});Model.Statement.NopStmt@51dd001);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((((int v;int x);int y);v=ValueExp{e=int:0});repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+(((int v;int x);int y);v=ValueExp{e=int:0})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+((int v;int x);int y)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+int y
+(int v;int x)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+int y
+int x
+int v
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+int y
+int x
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+int y
+SymTable:
+vint:0
+xint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+v=ValueExp{e=int:0}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1});WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=LogicExp{e1=v, e2=ValueExp{e=int:3}, op=1}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((((int v;int x);int y);v=ValueExp{e=int:0});repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+(((int v;int x);int y);v=ValueExp{e=int:0})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+((int v;int x);int y)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+(int v;int x)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+int x
+int v
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+int x
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+SymTable:
+vint:0
+xint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1});WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+SymTable:
+vint:-1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+(((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0)
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3})
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+y=ValueExp{e=int:3}
+(x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226)
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+y=ValueExp{e=int:3}
+Model.Statement.NopStmt@3810f226
+x=ValueExp{e=int:1}
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+y=ValueExp{e=int:3}
+Model.Statement.NopStmt@3810f226
+SymTable:
+vint:3
+xint:1
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+y=ValueExp{e=int:3}
+SymTable:
+vint:3
+xint:1
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+int:30
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((((int v;int x);int y);v=ValueExp{e=int:0});repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+(((int v;int x);int y);v=ValueExp{e=int:0})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+((int v;int x);int y)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+(int v;int x)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+int x
+int v
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+int x
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+SymTable:
+vint:0
+xint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1});WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+SymTable:
+vint:-1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+(((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3});Model.Statement.NopStmt@7ac311a0)
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+((x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226);y=ValueExp{e=int:3})
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+y=ValueExp{e=int:3}
+(x=ValueExp{e=int:1};Model.Statement.NopStmt@3810f226)
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+y=ValueExp{e=int:3}
+Model.Statement.NopStmt@3810f226
+x=ValueExp{e=int:1}
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+y=ValueExp{e=int:3}
+Model.Statement.NopStmt@3810f226
+SymTable:
+vint:3
+xint:1
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+y=ValueExp{e=int:3}
+SymTable:
+vint:3
+xint:1
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+Model.Statement.NopStmt@7ac311a0
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+int:30
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((((int v;int x);int y);v=ValueExp{e=int:0});repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+(((int v;int x);int y);v=ValueExp{e=int:0})
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+((int v;int x);int y)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+(int v;int x)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+int x
+int v
+SymTable:
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+int x
+SymTable:
+vint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+int y
+SymTable:
+vint:0
+xint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+v=ValueExp{e=int:0}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+repeatStmt{action=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}), condition=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+((forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1});WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 2
+ExeStack:
+SymTable:
+vint:-1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 3
+ExeStack:
+SymTable:
+vint:0
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+WhileStmt{exp=LogicExp{e1=RelExp{e1=v, e2=ValueExp{e=int:3}, op=3}, e2=ValueExp{e=true}, op=2}, stmt=(forkStmt{stmt=(print(v);v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2})};v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=1})}
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+print(v)
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+((((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;);print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3}))
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+v=ArithExp{e1=v, e2=ValueExp{e=int:1}, op=2}
+SymTable:
+vint:2
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+(((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3});nop;)
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 4
+ExeStack:
+SymTable:
+vint:1
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+nop;
+((x=ValueExp{e=int:1};nop;);y=ValueExp{e=int:3})
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+nop;
+y=ValueExp{e=int:3}
+(x=ValueExp{e=int:1};nop;)
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+nop;
+y=ValueExp{e=int:3}
+nop;
+x=ValueExp{e=int:1}
+SymTable:
+vint:3
+xint:0
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+nop;
+y=ValueExp{e=int:3}
+nop;
+SymTable:
+vint:3
+xint:1
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+nop;
+y=ValueExp{e=int:3}
+SymTable:
+vint:3
+xint:1
+yint:0
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+nop;
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+print(ArithExp{e1=v, e2=ValueExp{e=int:10}, op=3})
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+FileTable:
+Heap:
+
+----------------
+Id: 1
+ExeStack:
+SymTable:
+vint:3
+xint:1
+yint:3
+Out:
+int:0
+int:1
+int:2
+int:30
+FileTable:
+Heap:
+
