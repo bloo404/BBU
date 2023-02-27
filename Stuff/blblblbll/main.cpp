@@ -4,6 +4,7 @@
 using namespace std;
 ifstream fin("text.txt");
 ofstream fout("newText.txt");
+/// aici vezi codul
 int main()
 {
     char vocale[11]="aeiouAEIOU";
