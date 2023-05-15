@@ -51,7 +51,7 @@ Efforts for homeworks, learning, preparing and studying.
 <br/> &emsp; &emsp; 🎡 **Extra (mandatory)**:
 <br/>  &emsp; &emsp; &emsp; ■ [English B2-C2 level](https://github.com/bloo404/University-Projects/tree/main/Semester%203/English)
 <br/> &emsp; &emsp; 🎡 **Extra (non - mandatory)**:
-<br/> &emsp; &emsp; &emsp; ■ Teaching computer science 
+<br/> &emsp; &emsp; &emsp; ■ [Teaching computer science](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Didactica%20Informaticii)
 ## 🟣 Year 3
 <br/>  &emsp; ⚪ **Semester 5**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
