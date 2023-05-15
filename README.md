@@ -62,7 +62,6 @@ Efforts for homeworks, learning, preparing and studying.
 <br/> &emsp; &emsp; 🧠 **Science**:
 <br/> &emsp; &emsp; 🎡 **Extra**:
 
-## Extra Stuff
-[Extra stuff from university](https://github.com/bloo404/University-Projects/tree/main/Stuff)
+## [Extra stuff from university](https://github.com/bloo404/University-Projects/tree/main/Stuff)
 ------------------------------------------------------------------------------------------------------
 @me_and_my_peers
