@@ -38,13 +38,20 @@ Efforts for homeworks, learning, preparing and studying.
 <br/> &emsp; &emsp; 🧠 **Science**:
 <br/>  &emsp; &emsp; &emsp; ■ [Probabilities and statistics](https://github.com/bloo404/University-Projects/tree/main/Semester%203/Probabilities%20and%20statistics)
 <br/> &emsp; &emsp; 🎡 **Extra (mandatory)**:
-<br/>  &emsp; &emsp; &emsp; ■ [English C1-C2 level](https://github.com/bloo404/University-Projects/tree/main/Semester%203/English)
+<br/>  &emsp; &emsp; &emsp; ■ [English B2-C2 level](https://github.com/bloo404/University-Projects/tree/main/Semester%203/English)
 <br/> &emsp; &emsp; 🎡 **Extra (non-mandatory)**:
 <br/> &emsp; &emsp; &emsp; ■ Theory and methodology of instructing. Theory and methodology of evaluation
 <br/>  &emsp; ⚪ **Semester 4**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
-<br/> &emsp; &emsp; 🧠 **Science**:
-<br/> &emsp; &emsp; 🎡 **Extra**:
+<br/> &emsp; &emsp; &emsp; ■ Software engineering
+<br/> &emsp; &emsp; &emsp; ■ Database management system
+<br/> &emsp; &emsp; &emsp; ■ Artificial Intelligence
+<br/> &emsp; &emsp; &emsp; ■ Web programming
+<br/> &emsp; &emsp; &emsp; ■ Systems for design and implementation
+<br/> &emsp; &emsp; 🎡 **Extra (mandatory)**:
+<br/>  &emsp; &emsp; &emsp; ■ [English B2-C2 level](https://github.com/bloo404/University-Projects/tree/main/Semester%203/English)
+<br/> &emsp; &emsp; 🎡 **Extra (non - mandatory)**:
+<br/> &emsp; &emsp; &emsp; ■ Teaching computer science 
 ## 🟣 Year 3
 <br/>  &emsp; ⚪ **Semester 5**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
