@@ -1,0 +1,17 @@
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\bin\Debug\net6.0-windows\Project_1.exe
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\bin\Debug\net6.0-windows\Project_1.deps.json
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\bin\Debug\net6.0-windows\Project_1.runtimeconfig.json
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\bin\Debug\net6.0-windows\Project_1.dll
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\bin\Debug\net6.0-windows\Project_1.pdb
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.csproj.AssemblyReference.cache
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.Form1.resources
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.csproj.GenerateResource.cache
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.AssemblyInfoInputs.cache
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.AssemblyInfo.cs
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.csproj.CoreCompileInputs.cache
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.dll
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\refint\Project_1.dll
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.pdb
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\Project_1.genruntimeconfig.cache
+C:\Users\bloo404\Desktop\Materii\DBMS\Project_1\obj\Debug\net6.0-windows\ref\Project_1.dll

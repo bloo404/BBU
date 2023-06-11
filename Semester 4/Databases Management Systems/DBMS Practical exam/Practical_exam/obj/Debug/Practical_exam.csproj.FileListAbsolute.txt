@@ -1,0 +1,11 @@
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\bin\Debug\Practical_exam.exe.config
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\bin\Debug\Practical_exam.exe
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\bin\Debug\Practical_exam.pdb
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\obj\Debug\Practical_exam.csproj.AssemblyReference.cache
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\obj\Debug\Practical_exam.csproj.SuggestedBindingRedirects.cache
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\obj\Debug\Practical_exam.Form1.resources
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\obj\Debug\Practical_exam.Properties.Resources.resources
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\obj\Debug\Practical_exam.csproj.GenerateResource.cache
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\obj\Debug\Practical_exam.csproj.CoreCompileInputs.cache
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\obj\Debug\Practical_exam.exe
+C:\Users\bloo404\Desktop\DBMS Practical exam\Practical_exam\obj\Debug\Practical_exam.pdb
