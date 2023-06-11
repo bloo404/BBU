@@ -1,0 +1,20 @@
+.recipes tr:nth-child(even) {
+    background-color: #f56ef5;
+}
+
+.recipes td {
+    min-width: 60px;
+    padding-left: 5px;
+}
+
+.recipes tr:hover {
+    color: #8b008b;
+    background-color: #e6e6e6;
+    left: .1em;
+    position: relative;
+}
+
+.recipes tr.selected {
+    background-color: #090602;
+    color: white;
+}

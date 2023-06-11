@@ -1,0 +1,12 @@
+<div class="toolbar" role="banner">
+  <span>Welcome to the {{title}} app. (author: {{author}})</span>
+</div>
+
+<div class="content" role="main">
+
+  <button (click)=OnClickShowRecipes()>{{showRecipesCaption}}</button>
+  <div *ngIf="showRecipesPanel">
+    <app-recipe></app-recipe>
+  </div>
+</div>
+<router-outlet></router-outlet>

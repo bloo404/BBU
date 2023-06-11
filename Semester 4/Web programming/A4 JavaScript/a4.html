@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>County and City Selector</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="Romanian Counties"> Choose a county: </label>
+        <select id="county" onchange="updateCities()">
+            <option value="none"> Choose a county </option>
+            <option value="Alba">Alba</option>
+            <option value="Arad">Arad</option>
+            <option value="Arges">Argeș</option>
+            <option value="Bacau">Bacău</option>
+            <option value="Bihor">Bihor</option>
+            <option value="Bistrita-Nasaud">Bistrița-Năsăud</option>
+            <option value="Botosani">Botoșani</option>
+            <option value="Brasov">Brașov</option>
+            <option value="Braila">Brăila</option>
+            <option value="Bucuresti">București</option>
+            <option value="Buzau">Buzău</option>
+            <option value="Caras-Severin">Caraș-Severin</option>
+            <option value="Calarasi">Călărași</option>
+            <option value="Cluj">Cluj</option>
+            <option value="Constanta">Constanța</option>
+            <option value="Covasna">Covasna</option>
+            <option value="Dambovita">Dâmbovița</option>
+            <option value="Dolj">Dolj</option>
+            <option value="Galati">Galați</option>
+            <option value="Giurgiu">Giurgiu</option>
+            <option value="Gorj">Gorj</option>
+            <option value="Harghita">Harghita</option>
+            <option value="Hunedoara">Hunedoara</option>
+            <option value="Ialomita">Ialomița</option>
+            <option value="Iasi">Iași</option>
+            <option value="Ilfov">Ilfov</option>
+            <option value="Maramures">Maramureș</option>
+            <option value="Mehedinti">Mehedinți</option>
+            <option value="Mures">Mureș</option>
+            <option value="Neamt">Neamț</option>
+            <option value="Olt">Olt</option>
+            <option value="Prahova">Prahova</option>
+            <option value="Satu Mare">Satu Mare</option>
+            <option value="Salaj">Salaj</option>
+            <option value="Sibiu">Sibiu</option>
+            <option value="Suceava">Suceava</option>
+            <option value="Teleorman">Teleorman</option>
+            <option value="Timis">Timiș</option>
+            <option value="Tulcea">Tulcea</option>
+            <option value="Vaslui">Vaslui</option>
+            <option value="Valcea">Vâlcea</option>
+            <option value="Vrancea">Vrancea</option>
+        </select>
+    </div>
+    <div>
+        <label for="city"> City </label>
+        <select id="city" disabled>
+            <option value=""> Select County First </option>
+        </select>
+    </div>
+    <script>
+        function updateCities() {
+
+            // Define the cities for each county
+            const cityMap = {
+                "": ["Select county first:"],
+                Alba: ["Alba Iulia", "Aiud", "Sebes", "Cugir", "Blaj", "Ocna Mures", "Zlatna", "Abrud", "Baia de Aries", "Teius"],
+                Arad: ["Arad", "Ineu", "Pancota"],
+                Arges: ["Pitesti", "Campulung", "Curtea de Arges"],
+                Bacau: ["Bacau", "Onesti", "Moinesti"],
+                Bihor: ["Oradea", "Salonta", "Marghita"],
+                "Bistrita-Nasaud": ["Bistrita", "Nasaud", "Sangeorz-Bai"],
+                Botosani: ["Botosani", "Dorohoi", "Saveni"],
+                Braila: ["Braila", "Ianca", "Insuratei"],
+                Brasov: ["Brasov", "Fagaras", "Sacele"],
+                Bucuresti: ["Bucuresti"],
+                Buzau: ["Buzau", "Ramnicu Sarat", "Nehoiu"],
+                Calarasi: ["Calarasi", "Oltenita", "Fundulea"],
+                "Caras-Severin": ["Resita", "Caransebes", "Oravita"],
+                Cluj: ["Cluj-Napoca", "Turda", "Dej"],
+                Constanta: ["Constanta", "Mangalia", "Medgidia"],
+                Covasna: ["Sfantu Gheorghe", "Targu Secuiesc", "Baraolt"],
+                Dambovita: ["Targoviste", "Moreni", "Gaesti"],
+                Dolj: ["Craiova", "Calafat", "Dabuleni"],
+                Galati: ["Galati", "Tecuci", "Targu Bujor"],
+                Giurgiu: ["Giurgiu", "Bolintin-Vale", "Mihailesti"],
+                Gorj: ["Targu Jiu", "Motru", "Rovinari"],
+                Harghita: ["Miercurea-Ciuc", "Odorheiu Secuiesc", "Toplita"],
+                Hunedoara: ["Deva", "Hunedoara", "Petrosani"],
+                Ialomita: ["Slobozia", "Urziceni", "Fetesti"],
+                Iasi: ["Iasi", "Pascani", "Harlau"],
+                Ilfov: ["Voluntari", "Buftea", "Pantelimon"],
+                Maramures: ["Baia Mare", "Sighetu Marmatiei", "Viseu de Sus"],
+                Mehedinti: ["Drobeta-Turnu Severin", "Orsova", "Strehaia"],
+                Mures: ["Targu Mures", "Sighisoara", "Reghin"],
+                Neamt: ["Piatra Neamt", "Roman", "Targu Neamt"],
+                Olt: ["Slatina", "Caracal", "Scornicesti"],
+                Prahova: ["Ploiesti", "Baicoi", "Comarnic", "Breaza", "Urlati"],
+                "Satu Mare": ["Satu Mare", "Carei", "Negresti-Oas", "Ardud", "Livada"],
+                Salaj: ["Zalau", "Simleu Silvaniei", "Jibou", "Cehu Silvaniei", "Barcau"],
+                Sibiu: ["Sibiu", "Medias", "Cisnadie", "Avrig", "Saliste"],
+                Suceava: ["Suceava", "Falticeni", "Radauti", "Vatra Dornei", "Gura Humorului",],
+                Teleorman: ["Alexandria","Rosiorii de Vede","Turnu Magurele","Zimnicea","Videle",],
+                Timis: ["Timisoara", "Lugoj", "Jimbolia", "Buzias", "Faget"],
+                Vaslui: ["Vaslui", "Barlad", "Husi", "Negresti", "Murgeni"],
+                Valcea: ["Hunedoara", "Deva", "Petrosani", "Lupeni", "Vulcan"],
+                Vrancea: ["Focsani", "Adjud", "Panciu", "Marasesti", "Odobesti"],
+            };
+
+            const countySelect = document.getElementById("county");
+            const citySelect = document.getElementById("city");
+
+            countySelect.addEventListener("change", function () {
+                const selectedCounty = countySelect.value;
+                const cities = cityMap[selectedCounty];
+
+                citySelect.innerHTML = "<option value=''>Select a city</option>";
+
+                if (cities) {
+                    cities.forEach(function (city) {
+                        const option = document.createElement("option");
+                        option.text = city;
+                        option.value = city;
+                        citySelect.add(option);
+                    });
+                    citySelect.disabled = false;
+                } else {
+                    citySelect.disabled = true;
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>

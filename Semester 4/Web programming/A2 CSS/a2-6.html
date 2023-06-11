@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    table, th, td{
+      border-radius: 20%;
+      padding: 0%;
+      border: 2px outset black;
+      border-collapse: collapse;
+      border-color: purple;
+      width: 100%;
+      text-align: center;
+      background-color: plum;
+      font-family:'Courier New', Courier, monospace;
+      word-wrap: break-word;
+    }
+
+    thead{color: rgb(107, 9, 107);}
+    tbody {color: rgb(33, 3, 66);}
+
+/*    tbody:hover
+    {
+      display: none;
+    }
+    thead:hover{
+      display: block;
+    }
+    YES BUT WHAT ABOUT THE FIRST LINE?????????????????
+*/
+    .hidden{
+      visibility: visible;
+      transition-property: height ease;
+      transition-duration: 2s;
+      transition-timing-function: linear;
+     }
+  
+    .hidden:hover{
+/*      height: 0%;*/
+      visibility: collapse;
+    }
+
+    /*    YES BUT WHAT ABOUT THE FIRST LINE????????????????? */
+
+    div{
+      width: 100%;
+      height: 100%;
+      background-color: floralwhite;
+    }
+
+  /*  div:hover {
+      display: table-header-group;
+      THIS DOES NOT WORKKKKKKKKKKKKKKKKKKK BUT IT SHOULD :)
+    }*/
+    
+    </style>
+
+  <html>
+  </head>
+
+  <body>
+    <div>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2"> Name </th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody class="hidden">
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>Swanson</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>Brown</td>
+          <td>$250</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </body>
+</html>

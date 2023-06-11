@@ -1,0 +1,12 @@
+O sa avem filtrare de facut
+jQuery
+javascript
+
+Sa nu fie functii diferite (toate impreuna)
+
+Filter
+- age
+- name
+- altele
+
+getUsersByFilter()

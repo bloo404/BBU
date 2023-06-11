@@ -1,0 +1,65 @@
+<html>
+<head>
+    <style type="text/css">
+        .mytablerow {
+            background-color: #ff9999;
+        }
+    </style>
+    
+</head>
+<body>
+
+<section style="border: 1px solid red; width: 400px">
+Get recipe details:<br/>
+    Name: <input id="id" title="title" author="author"/> <br/>
+    <input type="button" id="btn_getRecipes" value="Get all recipes"/><br/>
+</section>
+
+<section id="main"></section>
+
+</body>
+
+<script src="js/jquery-2.0.3.js"></script>
+    <script language="javascript">
+        function showRecipe(recipe) {
+            var content = "ID: "+ recipe.id + "<br/>" +
+                          "title: " + recipe.title + "<br/>" + 
+                          "author: " + recipe.author+ "<br/>";
+            $("#main").html(content);
+        }
+
+        function showAllDocuments(documents) {
+            var content = "<table><thead><tr><td>ID</td><td>title</td><td>author</td></tr></thead>";
+            console.log(documents);
+            i=0;
+            documents.forEach(elem => {
+                    if (i % 2 == 0) {
+                        content += "<tr class='mytablerow'>";
+                    } else {
+                        content += "<tr>";
+                    }
+                    i++;
+                    content += "<td>" + elem.id + "</td>" +
+                               "<td>" + elem.title + "</td>" +
+                               "<td>" + elem.author + "</td>" +
+                               "<td>";
+                    content +="</td></tr>";
+            });
+            content += "</table>";
+
+            $("#main").html(content);
+        }
+
+        $(document).ready(function() {
+
+            $("#btn_getDocuments").click(function() {
+                $.getJSON(
+                    "controller/controller.php",  
+                    { action: "getAllDocuments" }, 
+                    showAllDocuments 
+                );
+            });
+        });
+    </script>
+
+</html>

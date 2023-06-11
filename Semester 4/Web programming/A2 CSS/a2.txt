@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+table, th, td{
+	padding: 15px;
+	border: 1px solid;
+	width: 100%;
+	text-align: center;
+}
+tr:hver
+{
+	background-color: coral;
+}
+<html>
+
+</html>

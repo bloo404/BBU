@@ -1,0 +1,2 @@
+cd C:\xampp\htdocs\A7\RecipesAngular
+ng serve

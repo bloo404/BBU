@@ -1,0 +1,95 @@
+<h2> List of recipes </h2>
+<table *ngIf="recipes.length > 0" class="recipes">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Ingredients</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rec of recipes" (click)="onSelect(rec)">
+      <td>{{rec.title}}</td>
+      <td>{{rec.author}}</td>
+      <td>{{rec.type}}</td>
+      <td>{{rec.description}}</td>
+      <td>{{rec.ingredients}}</td>
+      <td>
+        <button class="btn" (click)="DeleteRecipe(rec)">Delete recipe</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<span *ngIf="errorMessage" class="errorMessage">{{errorMessage}}</span>
+
+<h2>Add Recipe</h2>
+<form #recipeForm="ngForm" (ngSubmit)="AddRecipe(recipeForm.value)">
+  <table>
+    <tr>
+      <td>Title:</td>
+      <td><input type="text" name="title" ngModel required></td>
+    </tr>
+    <tr>
+      <td>Author:</td>
+      <td><input type="text" name="author" ngModel required></td>
+    </tr>
+    <tr>
+      <td>Type:</td>
+      <td><input type="text" name="type" ngModel required></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" name="description" ngModel required></td>
+    </tr>
+    <tr>
+      <td>Ingredients:</td>
+      <td><input type="text" name="ingredients" ngModel required></td>
+    </tr>
+  </table>
+  <br>
+  <button type="submit"> Add recipe </button>
+</form>
+
+<span *ngIf="errorMessage" class="errorMessage">{{errorMessage}}</span>
+
+<h2>Update Recipe</h2>
+<form *ngIf="selectedRecipe" #recipeFormUpdate="ngForm" (ngSubmit)="UpdateRecipe(selectedRecipe)">
+  <table>
+    <tr>
+      <td>Title:</td>
+      <td><input type="text" name="title" [(ngModel)]="selectedRecipe.title" required></td>
+    </tr>
+    <tr>
+      <td>Author:</td>
+      <td><input type="text" name="author" [(ngModel)]="selectedRecipe.author" required></td>
+    </tr>
+    <tr>
+      <td>Type:</td>
+      <td><input type="text" name="type" [(ngModel)]="selectedRecipe.type" required></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" name="description" [(ngModel)]="selectedRecipe.description" required></td>
+    </tr>
+    <tr>
+      <td>Ingredients:</td>
+      <td><input type="text" name="ingredients" [(ngModel)]="selectedRecipe.ingredients" required></td>
+    </tr>
+  </table>
+  <br>
+  <button type="submit">Update recipe</button>
+</form>
+
+<span *ngIf="errorMessage" class="errorMessage">{{errorMessage}}</span>
+
+<h2> Filter Recipe </h2>
+<form (ngSubmit)="filterRecipes(type)">
+  <label>Type:</label>
+  <input type="text" name="type" [(ngModel)]="type">
+
+  <button type="submit">Filter recipes</button>
+</form>

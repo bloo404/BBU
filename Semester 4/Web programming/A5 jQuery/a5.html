@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .jqModal {
+        display: none; /* By default, display will be hidden */
+        position: fixed; /* Position will be fixed */
+        padding-top: 250px; /* Location of the modal box */
+        left: 0;
+        top: 0;
+        width: 100%; /* width 100%, resizable according to window size */
+        height: 100%; /* height 100%, resizable according to window size */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* color for the Fallback */
+        background-color: rgba(0, 0, 0, 0.7); /* Opacity for the fallback */
+      }
+      /* CSS for Modal Dialog Content Text */
+      .content {
+        background-color: #fff;
+        margin: auto;
+        padding: 20px;
+        border: 3px solid #809;
+        width: 80%;
+      }
+      /* CSS for Cross or exit or close Button */
+      .exit {
+        color: #809;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .exit:hover,
+      .exit:focus {
+        color: #000;
+        cursor: pointer;
+      }
+      #modalBtn {
+        background-color: #809;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+      }
+
+      #modalBtn2 {
+        background-color: green;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      select {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+
+      input {
+        margin-bottom: 20px;
+      }
+
+      button {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: absolute;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <form>
+        <p id="textToChange"> Text field that's gonna change </p>
+        <!-- 5 input fields -->
+        <label for="firstName"> First Name </label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstname"
+          placeholder="First Name: "
+        />
+        <label for="lastName"> Last Name </label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastname"
+          placeholder="Last Name"
+        />
+        <label for="eyeColor"> Eye color </label>
+        <input
+          type="text"
+          id="eyeColor"
+          name="eyeColor"
+          placeholder="Eye color"
+        />
+        <label for="favCol"> Favorite color </label>
+        <input
+          type="text"
+          id="favCol"
+          name="favCol"
+          placeholder="Favourite color"
+        />
+        <label for="age"> Age </label>
+        <input type="number" id="age" name="age" placeholder="Age" />
+        <br />
+        <!-- button here -->
+        <button type="button" id="modalBtn">Click here</button>
+        <!-- MODAL HERE -->
+        <div id="modalDemo" class="jqModal">
+          <div class="content">
+            <span class="exit">&times;</span>
+            <!-- 4 input fields -->
+            <label for="Title"> Title </label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Book title:"
+            />
+            <label for="Author"> Author </label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author: "
+            />
+            <label for="pages"> Pages </label>
+            <input
+              type="number"
+              id="pages"
+              name="pages"
+              placeholder="Pages: "
+            />
+            <label for="Year"> Year </label>
+            <input type="number" id="year" name="year" placeholder="year" />
+            <br />
+            <button type="button" id="modalBtn2">Click here</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // Set object for the modal
+      var myModal = document.getElementById("modalDemo");
+      // Set object for the button that will trigger the modal box
+      var myButton = document.getElementById("modalBtn");
+
+      var button2 = document.getElementById("modalBtn2");
+
+      // Set an element that will close the modal box
+      var exitBtn = document.getElementsByClassName("exit")[0];
+
+      // Allows display of modal box, when user clicks the button
+      myButton.onclick = function () {
+        myModal.style.display = "block";
+      };
+
+      button2.onclick = function () {
+        var title = $("#title").val();
+        var author = $("#author").val();
+        var pages = $("#pages").val();
+        var year = $("#year").val();
+        var concatStr = "";
+        concatStr = concatStr.concat(title,author,pages,year);
+        // alert(concatStr); 
+        var mainText = document.getElementById("textToChange");
+        mainText.textContent = concatStr;
+        myModal.style.display = "none";
+      };
+
+      // Allows the user to close the modal box, when user will click on (x) button
+      exitBtn.onclick = function () {
+        myModal.style.display = "none";
+      };
+
+      // Allows the user to close the modal box, even when the user clicks anywhere outside of the modal box
+      window.onclick = function (event) {
+        if (event.target == myModal) {
+          myModal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1679661900 source:c:\users\bloo404\desktop\just folders\c++\need_this_\date.in.c
+
+1679662114 source:c:\users\bloo404\desktop\just folders\c++\need_this_\main.cpp
+	<iostream>
+	<fstream>
+
