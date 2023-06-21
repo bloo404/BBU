@@ -1,0 +1,69 @@
+﻿@using User_Family.Models;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> See lineage </title>
+    <style>
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #663399;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <form action="/Main/GetParentLine" method="get">
+        <div>
+            Parent (mother/father): <input type="text" name="parent" />
+        </div>
+        <div>
+            <input type="submit" value="See parent line" class="button" />
+        </div>
+    </form>
+
+    <div>
+        @if (ViewData["peopleList"] != null)
+        {
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>username</th>
+                    <th>mother</th>
+                    <th>father</th>
+                </tr>
+                @foreach (var peep in (List<FamilyRelation>)ViewData["peopleList"])
+                {
+                    <tr>
+                        <td>@peep.id</td>
+                        <td>@peep.username</td>
+                        <td>@peep.mother</td>
+                        <td>@peep.father</td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿@using TopicPost.Models;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>See parent line</title>
+    <style>
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        @{
+            List<Posts> posts = (List<Posts>)ViewData["postsList"];
+        }
+        <table>
+            <tr>
+                <th>id</th>
+                <th>user</th>
+                <th>topic_id</th>
+                <th>text</th>
+                <th>date</th>
+            </tr>
+            @foreach (Posts post in posts)
+            {
+                <tr>
+                    <td>@post.id</td>
+                    <td>@post.user</td>
+                    <td>@post.topicid</td>
+                    <td>@post.text</td>
+                    <td>@post.date</td>
+                </tr>
+            }
+        </table>
+        <div class="button-container">
+            <a href="/Main/RedirectToUpdate" class="button"> Update post </a>
+            <a href="/Main/AddPost" class="button"> Add post </a>
+        </div>
+    </div>
+
+</body>
+</html>
