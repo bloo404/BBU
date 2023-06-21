@@ -1,4 +1,5 @@
-[UBB Faculty of Mathematics and Computer Science](https://www.cs.ubbcluj.ro/en/)
+Credits for materials, homeworks (unsolved), teaching and experience that was given: 
+    [UBB Faculty of Mathematics and Computer Science](https://www.cs.ubbcluj.ro/en/)
 
 # 🎓Computer Science Projects
 Student years in Faculty of Mathematics and Computer Science, Computer Science english section.
