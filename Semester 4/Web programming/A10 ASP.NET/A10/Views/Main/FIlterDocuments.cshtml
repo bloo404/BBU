@@ -1,0 +1,80 @@
+﻿@using A10.Models;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Filter Documents</title>
+    <style>
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="/Main/GetFilteredDocuments" method="get">
+        <div>
+            Type: <input type="text" name="type"/>
+        </div>
+        <div>
+            Format: <input type="text" name="format"/>
+        </div>
+        <div>
+            <input type="submit" value="Filter Documents"/>
+        </div>
+    </form>
+
+    <div>
+        @if (ViewData["documentList"] != null)
+        {
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>author</th>
+                    <th>title</th>
+                    <th>number_of_pages</th>
+                    <th>type</th>
+                    <th>format</th>
+                </tr>
+                @foreach (var doc in (List<Document>)ViewData["documentList"])
+                {
+                    <tr>
+                        <td>@doc.id</td>
+                        <td>@doc.author</td>
+                        <td>@doc.title</td>
+                        <td>@doc.number_of_pages</td>
+                        <td>@doc.type</td>
+                        <td>@doc.format</td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+    <div class="button-container">
+        <a href="/Main/GetDocuments" class="button">Get All Documents</a>
+        <a href="/Main/AddDocument" class="button">Add Document</a>
+    </div>
+</body>
+</html>

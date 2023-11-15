@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddDocument</title>
+    <style>
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/Main/SaveDocument" method="GET">
+            Author : <input type="text" id="author" name="author" /> <br/>
+            Title : <input type="text" id="title" name="title" /> <br/>
+            Number_of_pages : <input type="text" id="number_of_pages" name="number_of_pages"/> <br/>
+            type : <input type="text" id="type" name="type"/> <br/>
+            format : <input type="text" id="format" name="format"/> <br/>
+            <input type="submit" value="Add document"/>
+        </form>
+    </div>
+    <div class="button-container">
+        <a href="/Main/FilterDocuments" class="button">Filter Documents</a>
+        <a href="/Main/GetDocuments" class="button">Get All Documents</a>
+    </div>
+</body>
+</html>

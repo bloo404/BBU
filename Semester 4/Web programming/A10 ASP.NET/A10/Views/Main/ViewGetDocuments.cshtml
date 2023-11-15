@@ -1,0 +1,76 @@
+﻿@using A10.Models;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Get Documents</title>
+    <style>
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @{
+            List<Document> dlist = (List<Document>)ViewData["documentList"];
+        }
+        <table>
+            <tr>
+                <th>id</th>
+                <th>author</th>
+                <th>title</th>
+                <th>number_of_pages</th>
+                <th>type</th>
+                <th>format</th>
+                <th>Action</th>
+            </tr>
+            @foreach (Document doc in dlist)
+            {
+                <tr>
+                    <td>@doc.id</td>
+                    <td>@doc.author</td>
+                    <td>@doc.title</td>
+                    <td>@doc.number_of_pages</td>
+                    <td>@doc.type</td>
+                    <td>@doc.format</td>
+                    <td>
+                        <form action="/Main/DeleteDocument" method="post">
+                            <input type="hidden" name="id" value="@doc.id"/>
+                            <input type="submit" value="Delete" class="button"/>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </table>
+        <div class="button-container">
+            <a href="/Main/FilterDocuments" class="button">Filter Documents</a>
+            <a href="/Main/AddDocument" class="button">Add Document</a>
+        </div>
+    </div>
+
+</body>
+</html>
