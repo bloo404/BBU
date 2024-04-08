@@ -27,8 +27,8 @@ Efforts for homeworks, learning, preparing and studying.
 <br/>  &emsp; &emsp; &emsp; ■ Geometry
 <br/>  &emsp; &emsp; &emsp; ■ Dynamical systems
 <br/> &emsp; &emsp; 🎡 **Extra (non-mandatory)**:
-<br/>  &emsp; &emsp; &emsp; ■ [Pedagogy fundamentals](https://github.com/bloo404/University-Projects/tree/main/Semester%202/Pedagogy%20fundamentals)
-<br/> &emsp; &emsp; &emsp; ■ Entrepreneurship fundamentals
+<br/>  &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Pedagogy fundamentals](https://github.com/bloo404/University-Projects/tree/main/Semester%202/Pedagogy%20fundamentals)
+<br/> &emsp; &emsp; &emsp; ■ SOFT SKILLS: Entrepreneurship fundamentals
 ## 🟣 Year 2
 <br/>  &emsp; ⚪ **Semester 3**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
@@ -41,28 +41,52 @@ Efforts for homeworks, learning, preparing and studying.
 <br/> &emsp; &emsp; 🎡 **Extra (mandatory)**:
 <br/>  &emsp; &emsp; &emsp; ■ English B2-C1 level
 <br/> &emsp; &emsp; 🎡 **Extra (non-mandatory)**:
-<br/> &emsp; &emsp; &emsp; ■ Theory and methodology of instructing. Theory and methodology of evaluation
+<br/> &emsp; &emsp; &emsp; ■ SOFT SKILLS: Theory and methodology of instructing. Theory and methodology of evaluation
 <br/>  &emsp; ⚪ **Semester 4**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
 <br/> &emsp; &emsp; &emsp; ■ [Software engineering](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Software%20Engineering)
 <br/> &emsp; &emsp; &emsp; ■ [Database management system](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Databases%20Management%20Systems)
-<br/> &emsp; &emsp; &emsp; ■ [Artificial Intelligence](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Artificial%20Intelligence)
+<br/> &emsp; &emsp; &emsp; ■ [AI: Artificial Intelligence](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Artificial%20Intelligence)
 <br/> &emsp; &emsp; &emsp; ■ [Web programming](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Web%20programming)
 <br/> &emsp; &emsp; &emsp; ■ [Systems for design and implementation](https://github.com/bloo404/University-Projects/tree/main/Semester%204/System%20for%20design%20and%20implementation)
 <br/> &emsp; &emsp; 🎡 **Extra (mandatory)**:
 <br/>  &emsp; &emsp; &emsp; ■ English B2-C1 level
 <br/> &emsp; &emsp; 🎡 **Extra (non - mandatory)**:
-<br/> &emsp; &emsp; &emsp; ■ [Didactics of computer science](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Didactica%20Informaticii)
+<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Didactics of computer science](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Didactica%20Informaticii)
 ## 🟣 Year 3
 <br/>  &emsp; ⚪ **Semester 5**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
-<br/> &emsp; &emsp; 🧠 **Science**:
+<br/> &emsp; &emsp; &emsp; ■ [Mobile applications development]()
+<br/> &emsp; &emsp; &emsp; ■ [Formal languages and compiler design]()
+<br/> &emsp; &emsp; &emsp; ■ [Parallel and distributed programming]()
+
+<br/> &emsp; &emsp; 🧠 **Optionals**:
+<br/> &emsp; &emsp; &emsp; ■ [AI role: Development of innovative products]()
+<br/> &emsp; &emsp; &emsp; ■ [AI: Intelligent methods for solving real life problems]()
+<br/> &emsp; &emsp; &emsp; ■ [AI: Affective Computing]()
+
 <br/> &emsp; &emsp; 🎡 **Extra**:
+<br/> &emsp; &emsp; &emsp; ■ [Observative pedagogic practice 1]()
+<br/> &emsp; &emsp; &emsp; ■ [Computer assisted teaching]()
+
 <br/>  &emsp; ⚪ **Semester 6**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
-<br/> &emsp; &emsp; 🧠 **Science**:
-<br/> &emsp; &emsp; 🎡 **Extra**:
+<br/> &emsp; &emsp; &emsp; ■ [QA: Software systems verification and validation]()
+<br/> &emsp; &emsp; &emsp; ■ [Ethics]()
+<br/> &emsp; &emsp; &emsp; ■ [MATH: Numerical Calculus]()
 
-## [Extra stuff from university](https://github.com/bloo404/University-Projects/tree/main/Stuff)
+<br/> &emsp; &emsp; 🧠 **Optionals**:
+<br/> &emsp; &emsp; &emsp; ■ [AI: Artificial intelligence in climate change]()
+<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Ethics]()
+<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Software projects management]()
+
+
+<br/> &emsp; &emsp; 🎡 **Extra**:
+<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Observative pedagogic practice 2]()
+<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Class management]()
+
+## [Extra activities @ University](https://github.com/bloo404/University-Projects/tree/main/Stuff)
+<br/> &emsp; [CS InnoHUB](https://csinnohub.com/) (2022 - currently)
+<br/> &emsp; [Google Developers Students Club UBB](https://gdsc.community.dev/babes-bolyai-university/) (2023 - currrently)
 ------------------------------------------------------------------------------------------------------
 @me_and_my_peers
