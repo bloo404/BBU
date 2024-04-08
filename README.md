@@ -71,7 +71,7 @@ Student years in Faculty of Mathematics and Computer Science, Computer Science e
 <br/>  &emsp; ⚪ **Semester 6**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
 <br/> &emsp; &emsp; &emsp; ■ [QA: Software systems verification and validation]()
-<br/> &emsp; &emsp; &emsp; ■ [Ethics]()
+<br/> &emsp; &emsp; &emsp; ■ [Bachelor thesis development]()
 <br/> &emsp; &emsp; &emsp; ■ [MATH: Numerical Calculus]()
 
 <br/> &emsp; &emsp; 🧠 **Mandatory chosen optionals**:
