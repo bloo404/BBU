@@ -2,9 +2,8 @@ Credits for materials, homeworks (unsolved), teaching and experience that was gi
     [UBB Faculty of Mathematics and Computer Science](https://www.cs.ubbcluj.ro/en/)
 
 # 🎓Computer Science Projects
-Student years in Faculty of Mathematics and Computer Science, Computer Science english section.
+Student years in Faculty of Mathematics and Computer Science, Computer Science english section through the lens of homeworks, materials and other elements.
 
-Efforts for homeworks, learning, preparing and studying.
 ##  🟣 Year 1
 <br/>  &emsp; ⚪ **Semester 1**
 <br/> &emsp; &emsp; 🖥️ **Computers**:
@@ -60,7 +59,7 @@ Efforts for homeworks, learning, preparing and studying.
 <br/> &emsp; &emsp; &emsp; ■ [Formal languages and compiler design]()
 <br/> &emsp; &emsp; &emsp; ■ [Parallel and distributed programming]()
 
-<br/> &emsp; &emsp; 🧠 **Optionals**:
+<br/> &emsp; &emsp; 🧠 **Mandatory chosen optionals**:
 <br/> &emsp; &emsp; &emsp; ■ [AI role: Development of innovative products]()
 <br/> &emsp; &emsp; &emsp; ■ [AI: Intelligent methods for solving real life problems]()
 <br/> &emsp; &emsp; &emsp; ■ [AI: Affective Computing]()
@@ -75,7 +74,7 @@ Efforts for homeworks, learning, preparing and studying.
 <br/> &emsp; &emsp; &emsp; ■ [Ethics]()
 <br/> &emsp; &emsp; &emsp; ■ [MATH: Numerical Calculus]()
 
-<br/> &emsp; &emsp; 🧠 **Optionals**:
+<br/> &emsp; &emsp; 🧠 **Mandatory chosen optionals**:
 <br/> &emsp; &emsp; &emsp; ■ [AI: Artificial intelligence in climate change]()
 <br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Ethics]()
 <br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Software projects management]()
