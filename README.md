@@ -44,31 +44,28 @@ Credits for materials, homeworks (unsolved), teaching and experience that was gi
 
 ## 🟣 3rd year (last)
 <br/>  &emsp; ⚪ **Semester 5**
-<br/> &emsp; &emsp; &emsp; ■ [Mobile applications development]()
-<br/> &emsp; &emsp; &emsp; ■ [Formal languages and compiler design]()
-<br/> &emsp; &emsp; &emsp; ■ [Parallel and distributed programming]()
+<br/> &emsp; &emsp; &emsp; ■ [Mobile applications development]([https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%205/Mobile%20app%20programming))
+<br/> &emsp; &emsp; &emsp; ■ [Formal languages and compiler design]([https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%205/Formal%20languages%20and%20compiler%20design))
+<br/> &emsp; &emsp; &emsp; ■ [Parallel and distributed programming](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%205/Parallel%20and%20distributed%20programming)
 <br/> &emsp; &emsp; **Mandatory chosen optionals**:
 <br/> &emsp; &emsp; &emsp; ■ [AI role: Development of innovative products]()
 <br/> &emsp; &emsp; &emsp; ■ [AI: Intelligent methods for solving real life problems]()
 <br/> &emsp; &emsp; &emsp; ■ [AI: Affective Computing]()
 <br/> &emsp; &emsp; 🎡 **Extra**:
-<br/> &emsp; &emsp; &emsp; ■ [Observative pedagogic practice 1]()
-<br/> &emsp; &emsp; &emsp; ■ [Computer assisted teaching]()
+<br/> &emsp; &emsp; &emsp; ■ [Observative pedagogic practice 1](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%205/Practica%20pedagogica%20observativa)
+<br/> &emsp; &emsp; &emsp; ■ [Computer assisted teaching](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%205/Instruire%20asistata%20de%20calculator)
 <br/>  &emsp; 
 
-⚪ **Semester 6**
-<br/> &emsp; &emsp; &emsp; ■ [QA: Software systems verification and validation]()
+<br/> &emsp; ⚪ **Semester 6**
+<br/> &emsp; &emsp; &emsp; ■ [QA: Software systems verification and validation](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%206/Software%20Systems%20Verification%20and%20Validation)
 <br/> &emsp; &emsp; &emsp; ■ [Bachelor thesis development]()
-<br/> &emsp; &emsp; &emsp; ■ [MATH: Numerical Calculus]()
+<br/> &emsp; &emsp; &emsp; ■ [MATH: Numerical Calculus](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%206/Numerical%20Calculus)
 <br/> &emsp; &emsp;**Mandatory chosen optionals**:
-<br/> &emsp; &emsp; &emsp; ■ [AI: Artificial intelligence in climate change]()
-<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Ethics]()
-<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Software projects management]()
-
+<br/> &emsp; &emsp; &emsp; ■ [AI: Artificial intelligence in climate change](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%206/Metode%20de%20Inteligenta%20Artificiala%20in%20Schimbarea%20Climatica)
+<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Ethics](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%206/Etica)
+<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Software projects management](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%206/Gestiunea%20proiectelor%20software)
 <br/> &emsp; &emsp; 🎡 **Extra**:
-
-<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Observative pedagogic practice 2]()
-
+<br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Observative pedagogic practice 2](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%206/Practica%20pedagogica%202)
 <br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Class management]()
 
 ------------------------------------------------------------------------------------------------------
