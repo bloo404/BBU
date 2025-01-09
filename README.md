@@ -41,6 +41,7 @@ Credits for materials, homeworks (unsolved), teaching and experience that was gi
 <br/>  &emsp; &emsp; &emsp; ■ English B2-C2 level course
 <br/> &emsp; &emsp; 🎡 **Extra (non - mandatory)**:
 <br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Didactics of computer science](https://github.com/bloo404/University-Projects/tree/main/Semester%204/Didactica%20Informaticii)
+
 ## 🟣 3rd year (last)
 <br/>  &emsp; ⚪ **Semester 5**
 <br/> &emsp; &emsp; &emsp; ■ [Mobile applications development]()
@@ -53,7 +54,9 @@ Credits for materials, homeworks (unsolved), teaching and experience that was gi
 <br/> &emsp; &emsp; 🎡 **Extra**:
 <br/> &emsp; &emsp; &emsp; ■ [Observative pedagogic practice 1]()
 <br/> &emsp; &emsp; &emsp; ■ [Computer assisted teaching]()
-<br/>  &emsp; ⚪ **Semester 6**
+<br/>  &emsp; 
+
+⚪ **Semester 6**
 <br/> &emsp; &emsp; &emsp; ■ [QA: Software systems verification and validation]()
 <br/> &emsp; &emsp; &emsp; ■ [Bachelor thesis development]()
 <br/> &emsp; &emsp; &emsp; ■ [MATH: Numerical Calculus]()
@@ -61,8 +64,12 @@ Credits for materials, homeworks (unsolved), teaching and experience that was gi
 <br/> &emsp; &emsp; &emsp; ■ [AI: Artificial intelligence in climate change]()
 <br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Ethics]()
 <br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Software projects management]()
+
 <br/> &emsp; &emsp; 🎡 **Extra**:
+
 <br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Observative pedagogic practice 2]()
+
 <br/> &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Class management]()
+
 ------------------------------------------------------------------------------------------------------
 @me_and_my_peers
