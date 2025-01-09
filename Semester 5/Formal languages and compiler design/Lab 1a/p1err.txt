@@ -1,0 +1,14 @@
+# max of 3 numbers
+
+%^* intreg nr_1, nr_2, nr_3, maximus_primus!
+citesc nr_1 si nr_2 si nr_3!
+daca nr_1 > nr_2 si nr_1>nr_3 atunci /
+	maximus_primus primeste nr_1!
+apoi/ %surpriza
+	daca nr_2 > nr_1 si nr_2 > nr_3 atunci /
+		maximus_primus primeste nr_2!
+	apoi/
+		daca nr_3 > nr_1 si nr_3 > nr_2 atunci /
+			maximus_primus primeste nr_3!
+		inchei daca of_gandurile_astea
+afisez maximus_primus!

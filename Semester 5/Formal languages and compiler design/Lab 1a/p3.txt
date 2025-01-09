@@ -1,0 +1,9 @@
+# sum of n numbers
+
+intreg n, suma este 0!
+lista_numere l!
+
+hora pas este 1, limita este n, incepe de la 1 hopshasha:
+	dreapta hopa/
+		suma primeste suma plus l de pas!
+afiseaza suma!

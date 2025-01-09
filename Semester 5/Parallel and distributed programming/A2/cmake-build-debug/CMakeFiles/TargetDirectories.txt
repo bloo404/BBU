@@ -1,0 +1,3 @@
+C:/Users/bloo404/Desktop/UBB/3/SEM 1/PDP/A2/cmake-build-debug/CMakeFiles/A2.dir
+C:/Users/bloo404/Desktop/UBB/3/SEM 1/PDP/A2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bloo404/Desktop/UBB/3/SEM 1/PDP/A2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

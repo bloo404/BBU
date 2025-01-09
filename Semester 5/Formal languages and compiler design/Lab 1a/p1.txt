@@ -1,0 +1,35 @@
+# max of 3 numbers
+
+/* intreg nr_1, nr_2, nr_3, maximus_primus
+citesc nr_1 si nr_2 si nr_3
+daca nr_1 > nr_2 si nr_1>nr_3 atunci
+	maximus_primus primeste nr_1
+apoi
+	daca nr_2 > nr_1 si nr_2 > nr_3 atunci
+		maximus_primus primeste nr_2
+	apoi
+		daca nr_3 > nr_1 si nr_3 > nr_2 atunci
+			maximus_primus primeste nr_3
+		inchei daca of_gandurile_astea
+afisez maximus_primus */
+
+int n1, n2, n3, maximus
+read n1, n2, n3
+if n1>n2 & n1>n3
+{
+	maximus = n1
+}
+else 
+{	if n2>n1 & n2>n3
+	{
+		maximus = n2
+	}
+	else
+	{
+		if n3>n2 & n3>n1
+		{
+			maximus = n3
+		}
+	}
+}
+write maximus

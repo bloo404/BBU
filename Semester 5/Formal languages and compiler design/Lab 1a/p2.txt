@@ -1,0 +1,17 @@
+# gcd of 2 numbers
+
+intreg nr_1, nr_2!
+citesc nr_1 si nr_2!
+daca nr_1 este 0 si nr_2 este diferit de 0 atunci/
+	afiseaza nr_2!
+apoi/
+	daca nr_1 este diferit de 0 si nr_2 este 0 atunci/
+		afiseaza nr_1!
+	apoi/
+		cat timp nr_1 este diferit de nr_2 fa lup:
+			daca nr_1 > nr_2 atunci/
+				nr_1 primeste nr_1 minus nr_2!
+			apoi/
+				nr_2 primeste nr_2 minus nr_1!
+		aici termin lupul auuu
+		afiseaza nr_1!

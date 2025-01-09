@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="org.example.features.search.SearchByKeywordEmag" skipped="0" tests="4" time="41.62" timestamp="2024-05-19 05:13:24"><testcase classname="org.example.features.search.SearchByKeywordEmag" name="Search emag by keyword test DDT"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+org.example.steps.serenity.EndUserStepsEmag.filter_products(EndUserStepsEmag.java:16)&#13;
+org.example.features.search.SearchByKeywordEmag.searchEmagByKeywordTestDDT(SearchByKeywordEmag.java:58)&#13;
+</system-err></testcase></testsuite>

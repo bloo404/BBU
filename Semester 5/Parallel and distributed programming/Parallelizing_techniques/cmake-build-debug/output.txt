@@ -1,0 +1,2 @@
+Polynomial sequential:Result Coefficients: 1 * x^0 + 3 * x^1 + 6 * x^2 + 5 * x^3 
+Duration: 1 ms

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search by keyword story","Searching by keyword dragonfruit should display the corresponding article","FAILURE","2024-05-19T16:23:03.9679658+03:00[Europe/Bucharest]","0.0","8.05"
+"Search by keyword story","Searching by keyword pear should display the corresponding article","FAILURE","2024-05-19T16:26:38.8304531+03:00[Europe/Bucharest]","0.0","7.35"
+"Search by keyword story","Searching by keyword durian should display the corresponding article","FAILURE","2024-05-19T16:33:44.5420102+03:00[Europe/Bucharest]","0.0","16.48"
