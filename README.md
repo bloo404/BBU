@@ -22,6 +22,7 @@ Credits for materials, homeworks (unsolved), teaching and experience that was gi
 <br/> &emsp; &emsp; 🎡 **Extra (non-mandatory)**:
 <br/>  &emsp; &emsp; &emsp; ■ [SOFT SKILLS: Pedagogy fundamentals](https://github.com/bloo404/University-Projects/tree/main/Semester%202/Pedagogy%20fundamentals)
 <br/> &emsp; &emsp; &emsp; ■ SOFT SKILLS: Entrepreneurship fundamentals
+
 ## 🟣 2nd year
 <br/>  &emsp; ⚪ **Semester 3**
 <br/>  &emsp; &emsp; &emsp; ■ [Computer networks](https://github.com/bloo404/University-Projects/tree/main/Semester%203/Computer%20Networks)
@@ -55,7 +56,6 @@ Credits for materials, homeworks (unsolved), teaching and experience that was gi
 <br/> &emsp; &emsp; &emsp; ■ [Observative pedagogic practice 1](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%205/Practica%20pedagogica%20observativa)
 <br/> &emsp; &emsp; &emsp; ■ [Computer assisted teaching](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%205/Instruire%20asistata%20de%20calculator)
 <br/>  &emsp; 
-
 <br/> &emsp; ⚪ **Semester 6**
 <br/> &emsp; &emsp; &emsp; ■ [QA: Software systems verification and validation](https://github.com/bloo404/BBU_BSc_Computer-Science/tree/main/Semester%206/Software%20Systems%20Verification%20and%20Validation)
 <br/> &emsp; &emsp; &emsp; ■ [Bachelor thesis development]()
